@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+        .user-info-container {
+            background-color: #fff;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 300px;
+        }
+        .user-info-container h2 {
+            margin-bottom: 1rem;
+        }
+        .user-info-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .user-info-container input,
+        .user-info-container select {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .user-info-container button {
+            padding: 0.5rem;
+            font-size: 1rem;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="user-info-container">
+        <h2>User Info</h2>
+        <form method="post">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <select name="industry" required>
+                <option value="">Select Industry</option>
+                <option value="Technology">Technology</option>
+                <option value="Finance">Finance</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Education">Education</option>
+                <option value="Other">Other</option>
+            </select>
+            <button type="submit">Take Assessment</button>
+        </form>
+    </div>
+</body>
+</html>
