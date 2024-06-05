@@ -34,7 +34,9 @@
         </div>
         <div class="quiz-footer">
             <div class="quiz-details"></div>
-            <button type="button" id="btn">Submit</button>
+            <button type="button" id="btn-previous">Previous</button>
+            <button type="button" id="btn-next">Next</button>
+            <button type="button" id="btn-submit">Submit</button>
         </div>
     </div>
     <script>
@@ -48,7 +50,9 @@
         const b_text = document.getElementById("b_text");
         const c_text = document.getElementById("c_text");
         const d_text = document.getElementById("d_text");
-        const btnSubmit = document.getElementById("btn");
+        const btnNext = document.getElementById("btn-next");
+        const btnPrevious = document.getElementById("btn-previous");
+        const btnSubmit = document.getElementById("btn-submit");
 
         let currentQuiz = 0;
         let score = 0;
@@ -82,18 +86,34 @@
             return answer;
         }
 
+        btnNext.addEventListener("click", () => {
+            const answer = getSelected();
+            if (answer) {
+                if (currentQuiz < quizData.length - 1) {
+                    currentQuiz++;
+                    loadQuiz();
+                }
+            } else {
+                alert("Please select an answer before proceeding.");
+            }
+        });
+
+        btnPrevious.addEventListener("click", () => {
+            if (currentQuiz > 0) {
+                currentQuiz--;
+                loadQuiz();
+            }
+        });
+
         btnSubmit.addEventListener("click", () => {
             const answer = getSelected();
             if (answer) {
-                currentQuiz++;
-                if (currentQuiz < quizData.length) {
-                    loadQuiz();
-                } else {
-                    quiz.innerHTML = `
-                        <h2>You have completed the quiz.</h2>
-                        <button onclick="location.reload()">Restart Quiz</button>
-                    `;
-                }
+                quiz.innerHTML = `
+                    <h2>You have completed the quiz.</h2>
+                    <button onclick="location.reload()">Restart Quiz</button>
+                `;
+            } else {
+                alert("Please select an answer before submitting.");
             }
         });
     </script>

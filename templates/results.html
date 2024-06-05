@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Result</h1>
+    <p>Your score: {{ score }} out of {{ total_questions }}</p>
+    <form action="{{ url_for('retake') }}" method="get">
+        <button type="submit">Retake Quiz</button>
+    </form>
+</body>
+</html>
