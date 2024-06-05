@@ -5,14 +5,14 @@ import json
 import os
 
 # Path to your service account key file
-key_file_path = 'letsrise-caed029c5496.json'  # Path to your JSON key file
+key_file_path = 'xxx'  # Path to your JSON key file
 
 # Verify the key file exists
 if not os.path.exists(key_file_path):
     raise FileNotFoundError(f"Service account key file not found at {key_file_path}")
 
 # Google Sheet ID and sheet name
-sheet_id = '1mpvF-ew9mTczvHXOir3LRwbmoL1MzbU4H9I_Uxpw3gA'  # Google Sheet ID
+sheet_id = 'xxx'  # Google Sheet ID
 sheet_name = 'Sheet1'  # Sheet name if different
 
 # Set up the credentials
