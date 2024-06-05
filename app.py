@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, session, jsonify
 import csv
+import json
+import requests
 
 
 app = Flask(__name__)
@@ -22,9 +24,23 @@ def read_questions_from_csv(file_path):
             })
     return questions
 
+def read_questions_from_json(file_path):
+    with open(file_path, mode='r', encoding='utf-8') as jsonfile:
+        data = json.load(jsonfile)
+    
+    questions = []
+    for key, value in data.items():
+        question = {
+            "question": f"Question {key}",
+            "options": [item["Decision Statement"] for item in value]
+        }
+        questions.append(question)
+    
+    return questions
+
 
 # Load questions from CSV
-questions = read_questions_from_csv('questions.csv')
+questions = read_questions_from_json('assessment_google_sheet.json')
 
 
 @app.route('/')
@@ -76,9 +92,6 @@ def quiz():
         return redirect(url_for('user_info'))
 
     return render_template('quiz.html', questions=questions)
-
-
-import requests
 
 
 # Function to send data to Google Sheets
