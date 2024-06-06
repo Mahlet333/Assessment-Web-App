@@ -6,51 +6,115 @@ import os
 
 # Path to your service account key file
 key_file_path = 'letsrise-caed029c5496.json'  # Path to your JSON key file
-
-# Verify the key file exists
-if not os.path.exists(key_file_path):
+if not os.path.exists(key_file_path): 
     raise FileNotFoundError(f"Service account key file not found at {key_file_path}")
 
-# Google Sheet ID and sheet name
-sheet_id = '1mpvF-ew9mTczvHXOir3LRwbmoL1MzbU4H9I_Uxpw3gA'  # Google Sheet ID
-sheet_name = 'Sheet1'  # Sheet name if different
-
 # Set up the credentials
-scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+scope = ["https://spreadsheets.google.com/feeds", 
+         "https://www.googleapis.com/auth/drive",
+         "https://www.googleapis.com/auth/spreadsheets"]
 try:
     credentials = ServiceAccountCredentials.from_json_keyfile_name(key_file_path, scope)
     client = gspread.authorize(credentials)
     print("Successfully authenticated.")
 except Exception as e:
     print(f"Error during authentication: {e}")
-    raise
+    raise e
 
-try:
-    # Access the Google Sheet
-    sheet = client.open_by_key(sheet_id).worksheet(sheet_name)
-    print(f"Successfully accessed the Google Sheet: {sheet.title}")
-except gspread.exceptions.APIError as e:
-    print(f"APIError: {e}")
-    raise
-except Exception as e:
-    print(f"Unexpected error: {e}")
-    raise
+def retrieve_data(sheet_id, sheet_name):
+    try:  
+        sheet = client.open_by_key(sheet_id).worksheet(sheet_name)
+        data = sheet.get_all_records()
+        print(f"Successfully retrieved data from the sheet. Number of records: {len(data)}")
+    except Exception as e:
+        print(f"Error retrieving data: {e}")
+        raise
+    return data
 
-# Get all values in the sheet
-try:
-    data = sheet.get_all_records()
-    print(f"Successfully retrieved data from the sheet. Number of records: {len(data)}")
-except Exception as e:
-    print(f"Error retrieving data: {e}")
-    raise
+def create_new_sheet(title, folder_id, sheet_name=None):
+    try:
+        new_sheet = client.create(title, folder_id=folder_id)
+        print(f"Successfully created new sheet: {new_sheet.title} in folder {folder_id}")
+        
+        if sheet_name:
+            worksheet = new_sheet.get_worksheet(0) 
+            worksheet.update_title(sheet_name)
+            print(f"Successfully renamed sheet to: {sheet_name}")
+        return new_sheet
+    
+    except Exception as e:
+        print(f"Error creating new sheet in folder: {e}")
+        raise
+    
+def create_new_page(sheet_id, page_name):
+    try:
+        sheet = client.open_by_key(sheet_id)
+        new_page = sheet.add_worksheet(title=page_name, rows="100", cols="20")
+        print(f"Successfully created new page: {new_page.title}")
+        return new_page
+    
+    except Exception as e:
+        print(f"Error creating new page: {e}")
+        raise
+
+def append_row(sheet_id, sheet_name, row_data): #row_data should be a list
+    try:
+        sheet = client.open_by_key(sheet_id).worksheet(sheet_name)
+        sheet.append_row(row_data)
+        print(f"Successfully appended row: {row_data}")
+    except Exception as e:
+        print(f"Error appending row: {e}")
+        raise
+
+def update_row(sheet_id, sheet_name, row_index, row_data):  # row_data should be a list
+    try:
+        sheet = client.open_by_key(sheet_id).worksheet(sheet_name)
+        range_name = f'A{row_index}'
+        sheet.update(range_name=range_name, values=[row_data])
+        print(f"Successfully updated row {row_index} with data: {row_data}")
+    except Exception as e:
+        print(f"Error updating row: {e}")
+        raise
+
+def delete_sheet(sheet_id): # deletes the entire sheet
+    try:
+        sheet = client.open_by_key(sheet_id)
+        client.del_spreadsheet(sheet_id)
+        print(f"Successfully deleted sheet: {sheet.title}")
+    except Exception as e:
+        print(f"Error deleting sheet: {e}")
+        raise
+
+def delete_page(sheet_id, sheet_name):
+    try:
+        sheet = client.open_by_key(sheet_id)
+        worksheet = sheet.worksheet(sheet_name)
+        sheet.del_worksheet(worksheet)
+        print(f"Successfully deleted worksheet: {sheet_name} from sheet: {sheet.title}")
+    except Exception as e:
+        print(f"Error deleting worksheet: {e}")
+        raise
+
+def delete_row(sheet_id, sheet_name, row_index):
+    try:
+        # Access the Google Sheet
+        sheet = client.open_by_key(sheet_id).worksheet(sheet_name)
+        sheet.delete_rows(row_index)
+        print(f"Successfully deleted row {row_index} from worksheet: {sheet_name}")
+    except Exception as e:
+        print(f"Error deleting row: {e}")
+        raise
+
+
+# Google Sheet ID and sheet name
+sheet_id = '1rUDTXpzyyLuHXc_Tq8lANaqxbyaOR6DOLAP4Nq7X9Q0'  
+sheet_name = 'Assessment Form'
+data = retrieve_data(sheet_id, sheet_name)
 
 # Convert to a pandas DataFrame
 df = pd.DataFrame(data)
 
-# Sort the data by 'Question number' and 'Decision Statement Value'
 data_sorted = df.sort_values(by=['Question number', 'Decision Statement Value'])
-
-# Convert to JSON format
 data_dict = {}
 for _, row in data_sorted.iterrows():
     question_number = row['Question number']
@@ -64,12 +128,15 @@ for _, row in data_sorted.iterrows():
         "Scenario": row["Scenario"]
     })
 
-# Convert the dictionary to JSON
 data_json = json.dumps(data_dict, indent=4)
-
-# Save the JSON to a file
-output_file_path = 'assessment_google_sheet.json'  # Change this to your desired output path
+output_file_path = 'assessment_google_sheet.json'  
 with open(output_file_path, 'w') as f:
     f.write(data_json)
 
 print(f"JSON data has been saved to {output_file_path}")
+
+# Creating a new sheet inside the data visualization project folder.
+folder_id = '1vkz6D8eVLwbHzvDprLYPk0bPRGOoDScN'
+new_sheet = create_new_sheet("Assessment Data", folder_id)
+
+
