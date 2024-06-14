@@ -105,38 +105,8 @@ def delete_row(sheet_id, sheet_name, row_index):
         print(f"Error deleting row: {e}")
         raise
 
-
-# Google Sheet ID and sheet name
-sheet_id = '1rUDTXpzyyLuHXc_Tq8lANaqxbyaOR6DOLAP4Nq7X9Q0'  
-sheet_name = 'Assessment Form'
-data = retrieve_data(sheet_id, sheet_name)
-
-# Convert to a pandas DataFrame
-df = pd.DataFrame(data)
-
-data_sorted = df.sort_values(by=['Question number', 'Decision Statement Value'])
-data_dict = {}
-for _, row in data_sorted.iterrows():
-    question_number = row['Question number']
-    if question_number not in data_dict:
-        data_dict[question_number] = []
-    data_dict[question_number].append({
-        "Decision Statement": row["Decision Statement"].replace('"', ''),
-        "Decision Statement Value": row["Decision Statement Value"],
-        "Trait Number": row["Trait Number"],
-        "Trait Name": row["Trait Name"],
-        "Scenario": row["Scenario"]
-    })
-
-data_json = json.dumps(data_dict, indent=4)
-output_file_path = 'assessment_google_sheet.json'  
-with open(output_file_path, 'w') as f:
-    f.write(data_json)
-
-print(f"JSON data has been saved to {output_file_path}")
-
 # Creating a new sheet inside the data visualization project folder.
 folder_id = '1vkz6D8eVLwbHzvDprLYPk0bPRGOoDScN'
-new_sheet = create_new_sheet("Assessment Data", folder_id)
+
 
 

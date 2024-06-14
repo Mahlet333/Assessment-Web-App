@@ -1,0 +1,440 @@
+{
+    "Pre-Idea": [
+        {
+            "Challenges": "Problem Identification",
+            "Explanations": "Identify a problem to solve and develop a strategy/idea as a solution",
+            "Prerequisites": "Market Research"
+        },
+        {
+            "Challenges": "Identifying Viable Opportunities",
+            "Explanations": "Observing trends, gaps in the market, and unmet needs.",
+            "Prerequisites": "Problem Identification"
+        },
+        {
+            "Challenges": "Information Overload",
+            "Explanations": "Filtering and focusing on what\u2019s most relevant when there is a vast source of information",
+            "Prerequisites": "Accessibility to General Guidelines"
+        },
+        {
+            "Challenges": "Uncertainty and Ambiguity",
+            "Explanations": "This stage is often characterized by high levels of uncertainty, which can be paralyzing and lead to indecision.",
+            "Prerequisites": "Identifying Mentors"
+        },
+        {
+            "Challenges": "Time Management",
+            "Explanations": "Balancing the time spent on passion projects with other responsibilities and commitments",
+            "Prerequisites": "Setting Effective Priorites"
+        },
+        {
+            "Challenges": "Lack of Personal Confidence and Motivation",
+            "Explanations": "Lack of an inner drive and belief in one's ability to succeed",
+            "Prerequisites": "Being passionate to work on the problem"
+        },
+        {
+            "Challenges": "Active Listening",
+            "Explanations": "Listening to what's being said and what's not being said, questioning the problem on a different level.",
+            "Prerequisites": "Exposure and attention to the information from all perspectives"
+        },
+        {
+            "Challenges": "Listening for Problems",
+            "Explanations": "Engaging to conversations and listening to what the problems are",
+            "Prerequisites": "Using available information to problems more deeply"
+        },
+        {
+            "Challenges": "Identifying Stakeholders",
+            "Explanations": "Understanding the forces at play impacting ones passion.",
+            "Prerequisites": "Market Research"
+        },
+        {
+            "Challenges": "Building Supporters",
+            "Explanations": "Converting the observer to someone that adds value to your passion",
+            "Prerequisites": "Communication and Active Engagement"
+        },
+        {
+            "Challenges": "Identifying Mentors",
+            "Explanations": "Seeking individual that have relevent knowledge and experience.",
+            "Prerequisites": "Problem Identification and Awearness"
+        },
+        {
+            "Challenges": "Making yourself visible",
+            "Explanations": "Increase the number of conversations by attending events",
+            "Prerequisites": "Identifying Relevant Events"
+        },
+        {
+            "Challenges": "Discovering your Super Power",
+            "Explanations": "Discovering what connects you to the passion project",
+            "Prerequisites": "Identifying/Evaluating Personal Passions and Talents"
+        },
+        {
+            "Challenges": "Identifying Relevant Events",
+            "Explanations": "Discovering what events can bring you the benefit of growth and building supportive relationships",
+            "Prerequisites": "Identifying Stakeholders"
+        },
+        {
+            "Challenges": "Stakeholder Engagement",
+            "Explanations": "Involve in active decision-making with the stake holders network",
+            "Prerequisites": "Identifying Stakeholders"
+        }
+    ],
+    "Pre-Launch": [
+        {
+            "Challenges": "Pitching your idea",
+            "Explanations": "Clearly define and articulate your business idea or concept",
+            "Prerequisites": "Ideating potential solutions"
+        },
+        {
+            "Challenges": "Market Research",
+            "Explanations": "Understanding if there is a genuine market need for their idea.",
+            "Prerequisites": "Pitching your idea"
+        },
+        {
+            "Challenges": "Value Proposition",
+            "Explanations": "Develop a clear value proposition.",
+            "Prerequisites": "Problem Exploration"
+        },
+        {
+            "Challenges": "Customer Identification",
+            "Explanations": "Determining who the target customers are and their characteristics.",
+            "Prerequisites": "Value proposition"
+        },
+        {
+            "Challenges": "User Research",
+            "Explanations": "Gather insights from potential users to align MVP features with their needs and preferences.",
+            "Prerequisites": "Customer Identification"
+        },
+        {
+            "Challenges": "Essential feature selection",
+            "Explanations": "Define and prioritize the core features and functionalities that your MVP will include.",
+            "Prerequisites": "User Research"
+        },
+        {
+            "Challenges": "MVP Creation",
+            "Explanations": "Develop a Minimum Viable Product (MVP) to test the concept with real users.",
+            "Prerequisites": "Essential feature selection"
+        },
+        {
+            "Challenges": "Go-to-Market Strategy",
+            "Explanations": "Develop a comprehensive plan for launching and promoting your product in the market.",
+            "Prerequisites": "Competitive Analysis"
+        },
+        {
+            "Challenges": "Market Penetration",
+            "Explanations": "Developing a strategy to enter the market and attract early customers.",
+            "Prerequisites": "GTM Strategy"
+        },
+        {
+            "Challenges": "Brand Identity",
+            "Explanations": "Developing a strong and recognizable brand from the outset.",
+            "Prerequisites": "clear value,mission and targer audience understanding"
+        },
+        {
+            "Challenges": "Bootstrapping",
+            "Explanations": "Using personal savings to fund initial operations and working long hours without income which may be demotivating.",
+            "Prerequisites": "Having a strong passion for the business's long term growth"
+        },
+        {
+            "Challenges": "Company Formation",
+            "Explanations": "Choosing the right legal structure and registering the business.",
+            "Prerequisites": "Market Research + Risk awearness"
+        },
+        {
+            "Challenges": "Compliance",
+            "Explanations": "Understanding and complying with relevant regulations.",
+            "Prerequisites": "Developing Risk Awareness"
+        },
+        {
+            "Challenges": "Finding Cofounders/Talent Acquisition",
+            "Explanations": "Identifying and convincing potential cofounders to join the venture and recruiting skilled senior-level team members with limited resources.",
+            "Prerequisites": "Identfying relevant events + Effective Communication"
+        },
+        {
+            "Challenges": "Exploring Revenue Streams",
+            "Explanations": "Identifying sustainable and scalable revenue models.",
+            "Prerequisites": "Market Research + Cost Awareness"
+        },
+        {
+            "Challenges": "Creating initial Infrastructure",
+            "Explanations": "Accessing necessary tools, office space, and technology on a budget.",
+            "Prerequisites": "Strategic Long term Planning + Resouce Pulling"
+        },
+        {
+            "Challenges": "Intellectual Property",
+            "Explanations": "Protecting intellectual property through patents, trademarks, etc. during the MVP creation process and even afterwards.",
+            "Prerequisites": "Treat of Subsidies + Market Research"
+        },
+        {
+            "Challenges": "Technical Challenges",
+            "Explanations": "Overcoming technical hurdles with limited resources.",
+            "Prerequisites": "Talent Acquisition"
+        },
+        {
+            "Challenges": "Investor Interest",
+            "Explanations": "Attracting interest from angel investors or early stage venture capitalists.",
+            "Prerequisites": "Identfying relevant events + Effective Communication"
+        },
+        {
+            "Challenges": "Competition Analysis",
+            "Explanations": "Identifying and analyzing potential competitors.",
+            "Prerequisites": "Identfying Stakeholders"
+        },
+        {
+            "Challenges": "Grants and Competitions",
+            "Explanations": "Finding and applying for grants or startup competitions.",
+            "Prerequisites": "Exposure and attention to relevant information"
+        },
+        {
+            "Challenges": "Marketing Strategy",
+            "Explanations": "Creating effective marketing strategies with minimal budget.",
+            "Prerequisites": "Trend seeking --> Trend Creation"
+        }
+    ],
+    "Post-Launch": [
+        {
+            "Challenges": "Customer Validation",
+            "Explanations": "Confirming the product meets customer needs through feedback and testing.",
+            "Prerequisites": "Minimum Viable Product (MVP) creation"
+        },
+        {
+            "Challenges": "Iterate and Refine",
+            "Explanations": "Use feedback from customer validation to make improvements and enhancements to the product.",
+            "Prerequisites": "Competition Analysis"
+        },
+        {
+            "Challenges": "Competition Analysis",
+            "Explanations": "Research and understand competitors' strengths, weaknesses, strategies, and market positioning.",
+            "Prerequisites": "Iterate and Refine"
+        },
+        {
+            "Challenges": "Go-to-Market Strategy",
+            "Explanations": "Develop a comprehensive plan for launching and promoting your product in the market.",
+            "Prerequisites": "Competitive Analysis"
+        },
+        {
+            "Challenges": "Brand Identity",
+            "Explanations": "Developing a strategy to enter the market and attract early customers.",
+            "Prerequisites": "Clear value, mission, and targer audience understanding"
+        },
+        {
+            "Challenges": "Bootstrapping",
+            "Explanations": "Developing a strong and recognizable brand from the outset.",
+            "Prerequisites": "Having a strong passion for the business's long term growth"
+        },
+        {
+            "Challenges": "Company Formation",
+            "Explanations": "Choosing the right legal structure and registering the business.",
+            "Prerequisites": "Market Research + Risk awearness"
+        },
+        {
+            "Challenges": "Compliance",
+            "Explanations": "Understanding and complying with relevant regulations.",
+            "Prerequisites": "Developing Risk Awareness"
+        },
+        {
+            "Challenges": "Finding Cofounders/Talent Acquisition",
+            "Explanations": "Identifying and convincing potential cofounders to join the venture and recruiting skilled senior-level team members with limited resources.",
+            "Prerequisites": "Identfying relevant events + Effective Communication"
+        },
+        {
+            "Challenges": "Exploring Revenue Streams",
+            "Explanations": "Identifying sustainable and scalable revenue models.",
+            "Prerequisites": "Market Research + Cost Awareness"
+        },
+        {
+            "Challenges": "Creating initial Infrastructure",
+            "Explanations": "Accessing necessary tools, office space, and technology on a budget.",
+            "Prerequisites": "Strategic Long term Planning + Resouce Pulling"
+        },
+        {
+            "Challenges": "Customer Acquisition",
+            "Explanations": "Finding the right channels and strategies for customer acquisition.",
+            "Prerequisites": "Marketing + Sales strategy"
+        },
+        {
+            "Challenges": "Intellectual Property",
+            "Explanations": "Protecting intellectual property through patents, trademarks, etc. during the MVP creation process and even afterwards.",
+            "Prerequisites": "Treat of Subsidies + Market Research"
+        },
+        {
+            "Challenges": "Technical Challenges",
+            "Explanations": "Overcoming technical hurdles with limited resources.",
+            "Prerequisites": "Talent Acquisition"
+        },
+        {
+            "Challenges": "Investor Interest",
+            "Explanations": "Attracting interest from angel investors or early stage venture capitalists.",
+            "Prerequisites": "Identfying relevant events + Effective Communication"
+        },
+        {
+            "Challenges": "Grants and Competitions",
+            "Explanations": "Finding and applying for grants or startup competitions.",
+            "Prerequisites": "Exposure and attention to relevant information"
+        },
+        {
+            "Challenges": "Analyze Financial Projections",
+            "Explanations": "Understand your revenue forecasts, profit margins, cash flow, and financial needs.",
+            "Prerequisites": "Robust Accounting skills"
+        },
+        {
+            "Challenges": "Evaluating Market Potential",
+            "Explanations": "Assess the size of the market, growth opportunities, competitive landscape, and target audience.",
+            "Prerequisites": "(In depth) Market Reserch"
+        },
+        {
+            "Challenges": "Valuation",
+            "Explanations": "Determining a fair valuation for the startup to negotiate with investors.",
+            "Prerequisites": "Analyze Financial projections, Evaluating market potential"
+        },
+        {
+            "Challenges": "Customer Support",
+            "Explanations": "Providing excellent customer support to build trust and retain customers.",
+            "Prerequisites": "Active Engagement and Communication"
+        },
+        {
+            "Challenges": "Sales Strategy",
+            "Explanations": "Developing and refining the sales strategy to convert leads into paying customers.",
+            "Prerequisites": "Marketing Strategy and negotiation"
+        },
+        {
+            "Challenges": "Communication",
+            "Explanations": "Maintaining transparent and effective communication with investors.",
+            "Prerequisites": "Identifying relevant events and reaching out"
+        },
+        {
+            "Challenges": "Resource Allocation",
+            "Explanations": "Efficiently allocating resources to support growth initiatives.",
+            "Prerequisites": "Budget planning + Robust Accounting"
+        },
+        {
+            "Challenges": "Cash Flow Management",
+            "Explanations": "Managing cash flow effectively to ensure the startup can sustain operations until the next funding round.",
+            "Prerequisites": "Budget planning + Robust Accounting"
+        }
+    ],
+    "Growth": [
+        {
+            "Challenges": "Customer Validation",
+            "Explanations": "Confirming the product meets customer needs through feedback and testing.",
+            "Prerequisites": "Minimum Viable Product (MVP) creation"
+        },
+        {
+            "Challenges": "Iterate and Refine",
+            "Explanations": "Use feedback from customer validation to make improvements and enhancements to the product.",
+            "Prerequisites": "Competition Analysis"
+        },
+        {
+            "Challenges": "Competition Analysis",
+            "Explanations": "Research and understand competitors' strengths, weaknesses, strategies, and market positioning.",
+            "Prerequisites": "Iterate and Refine"
+        },
+        {
+            "Challenges": "Go-to-Market Strategy",
+            "Explanations": "Develop a comprehensive plan for launching and promoting your product in the market.",
+            "Prerequisites": "Competitive Analysis"
+        },
+        {
+            "Challenges": "Brand Identity",
+            "Explanations": "Developing a strategy to enter the market and attract early customers.",
+            "Prerequisites": "clear value,mission and targer audience understanding"
+        },
+        {
+            "Challenges": "Bootstrapping",
+            "Explanations": "Developing a strong and recognizable brand from the outset.",
+            "Prerequisites": "Having a strong passion for the business's long term growth"
+        },
+        {
+            "Challenges": "Company Formation",
+            "Explanations": "Choosing the right legal structure and registering the business.",
+            "Prerequisites": "Market Research + Risk awearness"
+        },
+        {
+            "Challenges": "Compliance",
+            "Explanations": "Understanding and complying with relevant regulations.",
+            "Prerequisites": "Developing Risk Awareness"
+        },
+        {
+            "Challenges": "Finding Cofounders/Talent Acquisition",
+            "Explanations": "Identifying and convincing potential cofounders to join the venture and recruiting skilled senior-level team members with limited resources.",
+            "Prerequisites": "Identfying relevant events + Effective Communication"
+        },
+        {
+            "Challenges": "Exploring Revenue Streams",
+            "Explanations": "Identifying sustainable and scalable revenue models.",
+            "Prerequisites": "Market Research + Cost Awareness"
+        },
+        {
+            "Challenges": "Creating initial Infrastructure",
+            "Explanations": "Accessing necessary tools, office space, and technology on a budget.",
+            "Prerequisites": "Strategic Long term Planning + Resouce Pulling"
+        },
+        {
+            "Challenges": "Customer Acquisition",
+            "Explanations": "Finding the right channels and strategies for customer acquisition.",
+            "Prerequisites": "Marketing + Sales strategy"
+        },
+        {
+            "Challenges": "Intellectual Property",
+            "Explanations": "Protecting intellectual property through patents, trademarks, etc. during the MVP creation process and even afterwards.",
+            "Prerequisites": "Treat of Subsidies + Market Research"
+        },
+        {
+            "Challenges": "Technical Challenges",
+            "Explanations": "Overcoming technical hurdles with limited resources.",
+            "Prerequisites": "Talent Acquisition"
+        },
+        {
+            "Challenges": "Investor Interest",
+            "Explanations": "Attracting interest from angel investors or early stage venture capitalists.",
+            "Prerequisites": "Identfying relevant events + Effective Communication"
+        },
+        {
+            "Challenges": "Grants and Competitions",
+            "Explanations": "Finding and applying for grants or startup competitions.",
+            "Prerequisites": "Exposure and attention to relevant information"
+        },
+        {
+            "Challenges": "Analyze Financial Projections",
+            "Explanations": "Assess the size of the market, growth opportunities, competitive landscape, and target audience.",
+            "Prerequisites": "Robust Accounting skills"
+        },
+        {
+            "Challenges": "Valuation",
+            "Explanations": "Determining a fair valuation for the startup to negotiate with investors.",
+            "Prerequisites": "Analyze Financial projections, Evaluating market potential"
+        },
+        {
+            "Challenges": "Securing Funds",
+            "Explanations": "Approach investors with your business plan and valuation to secure the necessary funding to scale your business.",
+            "Prerequisites": "Effective communication and pitching"
+        },
+        {
+            "Challenges": "Sales Strategy",
+            "Explanations": "Developing and refining the sales strategy to convert leads into paying customers.",
+            "Prerequisites": "Developing and refining the sales strategy to convert leads into paying customers."
+        },
+        {
+            "Challenges": "Communication",
+            "Explanations": "Maintaining transparent and effective communication with investors.",
+            "Prerequisites": "Efficiently allocating resources to support growth initiatives."
+        },
+        {
+            "Challenges": "Resource Allocation",
+            "Explanations": "Efficiently allocating resources to support growth initiatives.",
+            "Prerequisites": "Budget planning + Robust Accounting"
+        },
+        {
+            "Challenges": "Scaling Operations",
+            "Explanations": "Ensuring that operational capabilities can scale with business growth and that business is adaptable to changing circumstances.",
+            "Prerequisites": "Finding Effective Ways of Cutting Costs + Product Improvment"
+        },
+        {
+            "Challenges": "Milestones",
+            "Explanations": "Meeting key milestones and performance metrics to secure continued investor support.",
+            "Prerequisites": "Long term Strategic Plan"
+        },
+        {
+            "Challenges": "Cash Flow Management",
+            "Explanations": "Managing cash flow effectively to ensure the startup can sustain operations until the next funding round.",
+            "Prerequisites": "Budget planning + Robust Accounting"
+        }
+    ]
+}

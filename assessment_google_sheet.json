@@ -4,35 +4,35 @@
             "Decision Statement": "I rely on deep experience to understand potential customer challenges.",
             "Decision Statement Value": 1,
             "Trait Number": 1,
-            "Trait Name": "Customer-Centric\u00a0",
+            "Trait Name": "Customer-Centric",
             "Scenario": "Understanding Customer Challenge"
         },
         {
             "Decision Statement": "I validate my grasp of customer challenges by discussing problems and solutions with a small group.",
             "Decision Statement Value": 2,
             "Trait Number": 1,
-            "Trait Name": "Customer-Centric\u00a0",
+            "Trait Name": "Customer-Centric",
             "Scenario": "Understanding Customer Challenge"
         },
         {
             "Decision Statement": "I use quick surveys or discussions with a larger group of potential customers to validate challenges.",
             "Decision Statement Value": 3,
             "Trait Number": 1,
-            "Trait Name": "Customer-Centric\u00a0",
+            "Trait Name": "Customer-Centric",
             "Scenario": "Understanding Customer Challenge"
         },
         {
             "Decision Statement": "I actively seek to understand and respond to customer challenges, validating my solution with them.",
             "Decision Statement Value": 4,
             "Trait Number": 1,
-            "Trait Name": "Customer-Centric\u00a0",
+            "Trait Name": "Customer-Centric",
             "Scenario": "Understanding Customer Challenge"
         },
         {
             "Decision Statement": "I actively explore my customers' challenges through in-depth discussions without presenting my solution.",
             "Decision Statement Value": 5,
             "Trait Number": 1,
-            "Trait Name": "Customer-Centric\u00a0",
+            "Trait Name": "Customer-Centric",
             "Scenario": "Understanding Customer Challenge"
         }
     ],
@@ -152,35 +152,35 @@
             "Decision Statement": "I build my products or services first, inviting customer feedback.",
             "Decision Statement Value": 1,
             "Trait Number": 1,
-            "Trait Name": "Customer-Centric\u00a0",
+            "Trait Name": "Customer-Centric",
             "Scenario": "Validating products and services"
         },
         {
             "Decision Statement": "I occasionally collect feedback during validation but remain confident in my understanding of customer needs.",
             "Decision Statement Value": 2,
             "Trait Number": 1,
-            "Trait Name": "Customer-Centric\u00a0",
+            "Trait Name": "Customer-Centric",
             "Scenario": "Validating products and services"
         },
         {
             "Decision Statement": "I actively seek customer input in validation, recognizing the need for improvement in incorporating insights.",
             "Decision Statement Value": 3,
             "Trait Number": 1,
-            "Trait Name": "Customer-Centric\u00a0",
+            "Trait Name": "Customer-Centric",
             "Scenario": "Validating products and services"
         },
         {
             "Decision Statement": "Customer validation is crucial; I consistently gather and use feedback to refine offerings.",
             "Decision Statement Value": 4,
             "Trait Number": 1,
-            "Trait Name": "Customer-Centric\u00a0",
+            "Trait Name": "Customer-Centric",
             "Scenario": "Validating products and services"
         },
         {
             "Decision Statement": "I involve customers in the development process to ensure consideration of their needs.",
             "Decision Statement Value": 5,
             "Trait Number": 1,
-            "Trait Name": "Customer-Centric\u00a0",
+            "Trait Name": "Customer-Centric",
             "Scenario": "Validating products and services"
         }
     ],
@@ -300,35 +300,35 @@
             "Decision Statement": "I acknowledge customers may discontinue our services upon achieving their goals or due to a lack of commitment.",
             "Decision Statement Value": 1,
             "Trait Number": 1,
-            "Trait Name": "Customer-Centric\u00a0",
+            "Trait Name": "Customer-Centric",
             "Scenario": "Customer-retention"
         },
         {
             "Decision Statement": "While valuing customer retention, I find obtaining feedback from disengaged customers time-consuming.",
             "Decision Statement Value": 2,
             "Trait Number": 1,
-            "Trait Name": "Customer-Centric\u00a0",
+            "Trait Name": "Customer-Centric",
             "Scenario": "Customer-retention"
         },
         {
             "Decision Statement": "I occasionally seek reasons for customers stopping our service, lacking a consistent approach.",
             "Decision Statement Value": 3,
             "Trait Number": 1,
-            "Trait Name": "Customer-Centric\u00a0",
+            "Trait Name": "Customer-Centric",
             "Scenario": "Customer-retention"
         },
         {
             "Decision Statement": "I prioritize customer retention, consistently implementing effective strategies for satisfaction.",
             "Decision Statement Value": 4,
             "Trait Number": 1,
-            "Trait Name": "Customer-Centric\u00a0",
+            "Trait Name": "Customer-Centric",
             "Scenario": "Customer-retention"
         },
         {
             "Decision Statement": "I go above and beyond with retention strategies to ensure long-term customer satisfaction and loyalty.",
             "Decision Statement Value": 5,
             "Trait Number": 1,
-            "Trait Name": "Customer-Centric\u00a0",
+            "Trait Name": "Customer-Centric",
             "Scenario": "Customer-retention"
         }
     ],
@@ -426,21 +426,21 @@
             "Decision Statement Value": 3,
             "Trait Number": 6,
             "Trait Name": "Visionary",
-            "Scenario": "Setting ambitious goals\u00a0"
+            "Scenario": "Setting ambitious goals"
         },
         {
             "Decision Statement": "My priority is impact over revenue, prioritizing customer needs before exploring income streams.",
             "Decision Statement Value": 4,
             "Trait Number": 6,
             "Trait Name": "Visionary",
-            "Scenario": "Setting ambitious goals\u00a0"
+            "Scenario": "Setting ambitious goals"
         },
         {
             "Decision Statement": "I systematically solve problems individually as part of a grand vision, revenue is an afterthought.",
             "Decision Statement Value": 5,
             "Trait Number": 6,
             "Trait Name": "Visionary",
-            "Scenario": "Setting ambitious goals\u00a0"
+            "Scenario": "Setting ambitious goals"
         }
     ],
     "13": [
@@ -634,7 +634,7 @@
             "Decision Statement Value": 1,
             "Trait Number": 6,
             "Trait Name": "Visionary",
-            "Scenario": "Thinking globally\u00a0"
+            "Scenario": "Thinking globally"
         },
         {
             "Decision Statement": "I'm excited about operating in nearby countries, not concerned about other regions.",
@@ -648,21 +648,21 @@
             "Decision Statement Value": 3,
             "Trait Number": 6,
             "Trait Name": "Visionary",
-            "Scenario": "Thinking globally\u00a0"
+            "Scenario": "Thinking globally"
         },
         {
             "Decision Statement": "Completing the company\u2019s mission means making our solution available in every major city worldwide.",
             "Decision Statement Value": 4,
             "Trait Number": 6,
             "Trait Name": "Visionary",
-            "Scenario": "Thinking globally\u00a0"
+            "Scenario": "Thinking globally"
         },
         {
             "Decision Statement": "My goal is to make our solution accessible to all, regardless of location.",
             "Decision Statement Value": 5,
             "Trait Number": 6,
             "Trait Name": "Visionary",
-            "Scenario": "Thinking globally\u00a0"
+            "Scenario": "Thinking globally"
         }
     ],
     "19": [
@@ -670,35 +670,35 @@
             "Decision Statement": "I favor a relaxed work approach to stay mindful, avoiding crucial details' oversight, as extra hours slow progress.",
             "Decision Statement Value": 1,
             "Trait Number": 7,
-            "Trait Name": "Hustler\u00a0",
+            "Trait Name": "Hustler",
             "Scenario": "Persistent Work Ethic"
         },
         {
             "Decision Statement": "I balance effort with downtime, making my work ethic consistent while occasionally going above and beyond.",
             "Decision Statement Value": 2,
             "Trait Number": 7,
-            "Trait Name": "Hustler\u00a0",
+            "Trait Name": "Hustler",
             "Scenario": "Persistent Work Ethic"
         },
         {
             "Decision Statement": "I prioritize project success with a strong work ethic, balancing it with breaks for a healthy work-life mix.",
             "Decision Statement Value": 3,
             "Trait Number": 7,
-            "Trait Name": "Hustler\u00a0",
+            "Trait Name": "Hustler",
             "Scenario": "Persistent Work Ethic"
         },
         {
             "Decision Statement": "I consistently go the extra mile, putting in persistent effort and long hours when needed to achieve goals.",
             "Decision Statement Value": 4,
             "Trait Number": 7,
-            "Trait Name": "Hustler\u00a0",
+            "Trait Name": "Hustler",
             "Scenario": "Persistent Work Ethic"
         },
         {
             "Decision Statement": "I am fully committed to giving my best and going beyond for success, with flexibility in working hours.",
             "Decision Statement Value": 5,
             "Trait Number": 7,
-            "Trait Name": "Hustler\u00a0",
+            "Trait Name": "Hustler",
             "Scenario": "Persistent Work Ethic"
         }
     ],
@@ -781,35 +781,35 @@
             "Decision Statement": "I don't prioritize time management; I focus on completing tasks, taking as long as needed.",
             "Decision Statement Value": 1,
             "Trait Number": 7,
-            "Trait Name": "Hustler\u00a0",
+            "Trait Name": "Hustler",
             "Scenario": "Effective Time Management"
         },
         {
             "Decision Statement": "I keep time management in mind, managing well overall, but sometimes struggle to prioritize tasks effectively.",
             "Decision Statement Value": 2,
             "Trait Number": 7,
-            "Trait Name": "Hustler\u00a0",
+            "Trait Name": "Hustler",
             "Scenario": "Effective Time Management"
         },
         {
             "Decision Statement": "I strike a balance in managing time, meeting deadlines, and prioritizing effectively.",
             "Decision Statement Value": 3,
             "Trait Number": 7,
-            "Trait Name": "Hustler\u00a0",
+            "Trait Name": "Hustler",
             "Scenario": "Effective Time Management"
         },
         {
             "Decision Statement": "I effectively manage time, meet deadlines, and prioritize tasks for maximum project productivity.",
             "Decision Statement Value": 4,
             "Trait Number": 7,
-            "Trait Name": "Hustler\u00a0",
+            "Trait Name": "Hustler",
             "Scenario": "Effective Time Management"
         },
         {
             "Decision Statement": "I excel in time management, optimizing my schedule, setting clear priorities, and achieving high productivity in projects.",
             "Decision Statement Value": 5,
             "Trait Number": 7,
-            "Trait Name": "Hustler\u00a0",
+            "Trait Name": "Hustler",
             "Scenario": "Effective Time Management"
         }
     ],
@@ -892,35 +892,35 @@
             "Decision Statement": "I often compromise during negotiations and reach favorable agreements for the other party.",
             "Decision Statement Value": 1,
             "Trait Number": 7,
-            "Trait Name": "Hustler\u00a0",
+            "Trait Name": "Hustler",
             "Scenario": "Effective Negotiation Skills"
         },
         {
             "Decision Statement": "While successful in some negotiations, I face challenges achieving favorable outcomes in others.",
             "Decision Statement Value": 2,
             "Trait Number": 7,
-            "Trait Name": "Hustler\u00a0",
+            "Trait Name": "Hustler",
             "Scenario": "Effective Negotiation Skills"
         },
         {
             "Decision Statement": "I possess decent negotiating skills, able to reach fair agreements in most situations.",
             "Decision Statement Value": 3,
             "Trait Number": 7,
-            "Trait Name": "Hustler\u00a0",
+            "Trait Name": "Hustler",
             "Scenario": "Effective Negotiation Skills"
         },
         {
             "Decision Statement": "I excel in effective negotiation, consistently securing favorable and mutually beneficial agreements.",
             "Decision Statement Value": 4,
             "Trait Number": 7,
-            "Trait Name": "Hustler\u00a0",
+            "Trait Name": "Hustler",
             "Scenario": "Effective Negotiation Skills"
         },
         {
             "Decision Statement": "I excel in negotiation, navigating complexity, securing advantageous deals, and consistently leveraging skills for success.",
             "Decision Statement Value": 5,
             "Trait Number": 7,
-            "Trait Name": "Hustler\u00a0",
+            "Trait Name": "Hustler",
             "Scenario": "Effective Negotiation Skills"
         }
     ],
@@ -1077,35 +1077,35 @@
             "Decision Statement": "I prioritize premium office spaces to project brand value, exceeding basic business needs.",
             "Decision Statement Value": 1,
             "Trait Number": 12,
-            "Trait Name": "Frugal\u00a0",
+            "Trait Name": "Frugal",
             "Scenario": "Practical Office Choices"
         },
         {
             "Decision Statement": "I invest in creative, productive office spaces that foster community, valuing cost-effectiveness.",
             "Decision Statement Value": 2,
             "Trait Number": 12,
-            "Trait Name": "Frugal\u00a0",
+            "Trait Name": "Frugal",
             "Scenario": "Practical Office Choices"
         },
         {
             "Decision Statement": "I prioritize office spaces and furnishings that balance functionality and aesthetics without unnecessary extravagance.",
             "Decision Statement Value": 3,
             "Trait Number": 12,
-            "Trait Name": "Frugal\u00a0",
+            "Trait Name": "Frugal",
             "Scenario": "Practical Office Choices"
         },
         {
             "Decision Statement": "I prioritize cost-effective office solutions, emphasizing functionality aligned with the business's financial health.",
             "Decision Statement Value": 4,
             "Trait Number": 12,
-            "Trait Name": "Frugal\u00a0",
+            "Trait Name": "Frugal",
             "Scenario": "Practical Office Choices"
         },
         {
             "Decision Statement": "I prioritize practical budget-friendly office choices and am open to remote work as needed.",
             "Decision Statement Value": 5,
             "Trait Number": 12,
-            "Trait Name": "Frugal\u00a0",
+            "Trait Name": "Frugal",
             "Scenario": "Practical Office Choices"
         }
     ],
@@ -1188,35 +1188,35 @@
             "Decision Statement": "In marketing, spending money consistently is key to making money throughout the year.",
             "Decision Statement Value": 1,
             "Trait Number": 12,
-            "Trait Name": "Frugal\u00a0",
+            "Trait Name": "Frugal",
             "Scenario": "Strategic Marketing Spending"
         },
         {
             "Decision Statement": "I allocate a standard marketing budget annually but boost it for new product or service promotions.",
             "Decision Statement Value": 2,
             "Trait Number": 12,
-            "Trait Name": "Frugal\u00a0",
+            "Trait Name": "Frugal",
             "Scenario": "Strategic Marketing Spending"
         },
         {
             "Decision Statement": "I spend considerable money on marketing only when launching a new product or service.",
             "Decision Statement Value": 3,
             "Trait Number": 12,
-            "Trait Name": "Frugal\u00a0",
+            "Trait Name": "Frugal",
             "Scenario": "Strategic Marketing Spending"
         },
         {
             "Decision Statement": "I operate a small budget for marketing and spend it wisely throughout the year.",
             "Decision Statement Value": 4,
             "Trait Number": 12,
-            "Trait Name": "Frugal\u00a0",
+            "Trait Name": "Frugal",
             "Scenario": "Strategic Marketing Spending"
         },
         {
             "Decision Statement": "I focus on organic marketing, limiting my marketing spend to almost nothing.",
             "Decision Statement Value": 5,
             "Trait Number": 12,
-            "Trait Name": "Frugal\u00a0",
+            "Trait Name": "Frugal",
             "Scenario": "Strategic Marketing Spending"
         }
     ],
@@ -1299,35 +1299,35 @@
             "Decision Statement": "I'm leaving a stable career, anticipating my entrepreneurial income to sustain my current lifestyle and contribute to savings.",
             "Decision Statement Value": 1,
             "Trait Number": 12,
-            "Trait Name": "Frugal\u00a0",
+            "Trait Name": "Frugal",
             "Scenario": "Financially Responsible Compensation"
         },
         {
             "Decision Statement": "Entrepreneurship requires sacrifices, but the salary should cover the cost of my current lifestyle.",
             "Decision Statement Value": 2,
             "Trait Number": 12,
-            "Trait Name": "Frugal\u00a0",
+            "Trait Name": "Frugal",
             "Scenario": "Financially Responsible Compensation"
         },
         {
             "Decision Statement": "I anticipate my entrepreneurial income to cover my current housing costs and about 75% of my monthly expenses.",
             "Decision Statement Value": 3,
             "Trait Number": 12,
-            "Trait Name": "Frugal\u00a0",
+            "Trait Name": "Frugal",
             "Scenario": "Financially Responsible Compensation"
         },
         {
             "Decision Statement": "I expect my entrepreneurial salary to provide a basic income to sustain the business.",
             "Decision Statement Value": 4,
             "Trait Number": 12,
-            "Trait Name": "Frugal\u00a0",
+            "Trait Name": "Frugal",
             "Scenario": "Financially Responsible Compensation"
         },
         {
             "Decision Statement": "I choose not to take a salary initially in a venture, directing compensation towards a team contributing to revenue building.",
             "Decision Statement Value": 5,
             "Trait Number": 12,
-            "Trait Name": "Frugal\u00a0",
+            "Trait Name": "Frugal",
             "Scenario": "Financially Responsible Compensation"
         }
     ],
