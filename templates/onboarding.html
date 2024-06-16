@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Assessment Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E8AFF6;
+            color: #11113A;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-page {
+            display: none;
+        }
+        .form-page.active {
+            display: block;
+        }
+        button {
+            margin-top: 20px;
+        }
+        .btn-primary {
+            background-color: #AFB0F6;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #FF83A7;
+        }
+        .btn-secondary {
+            background-color: #FF83A7;
+            border: none;
+        }
+        .btn-secondary:hover {
+            background-color: #AFB0F6;
+        }
+        .btn-success {
+            background-color: #11113A;
+            border: none;
+        }
+        .btn-success:hover {
+            background-color: #AFB0F6;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form id="assessmentForm" action="https://script.google.com/macros/s/AKfycbwwmQq7ADva5d_q6y19MEK8IeGsSn8yz1oHEOF7irV1Jv40zkk3Y-qT-LHV4dZ-3PWV/exec" method="POST">
+        <!-- Page 1 -->
+        <div class="form-page active" id="page-1">
+            <div class="form-header">
+                <h2>Let us know you better</h2>
+            </div>
+            <div class="form-body">
+                <div class="form-group">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number *</label>
+                    <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">When were you born? *</label>
+                    <div class="form-row">
+                        <div class="col">
+                            <select class="form-control" id="dobDay" name="dobDay" required>
+                                <option value="">Day</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <select class="form-control" id="dobMonth" name="dobMonth" required>
+                                <option value="">Month</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <select class="form-control" id="dobYear" name="dobYear" required>
+                                <option value="">Year</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Gender *</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="male" name="gender" value="male" required>
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="female" name="gender" value="female" required>
+                        <label class="form-check-label" for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="location">Where are you based? *</label>
+                    <input type="text" class="form-control" id="location" name="location" required>
+                </div>
+                <div class="form-footer">
+                    <button type="button" class="btn btn-primary" onclick="showPage(2)">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="form-page" id="page-2">
+            <div class="form-header">
+                <h2>Give us a little history</h2>
+            </div>
+            <div class="form-body">
+                <div class="form-group">
+                    <label>Education Level *</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="highSchool" name="educationLevel" value="High School" required>
+                        <label class="form-check-label" for="highSchool">High School</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="bachelors" name="educationLevel" value="Bachelors" required>
+                        <label class="form-check-label" for="bachelors">Bachelors</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="masters" name="educationLevel" value="Masters" required>
+                        <label class="form-check-label" for="masters">Masters</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="phd" name="educationLevel" value="PhD" required>
+                        <label class="form-check-label" for="phd">PhD</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="otherEducation" name="educationLevel" value="Other" required>
+                        <label class="form-check-label" for="otherEducation">Other</label>
+                    </div>
+                </div>
+                <div class="form-group"> 
+                    <label>Current Employment Status *</label>
+                    <div id="employmentStatusContainer" class="form-check"></div>
+                </div>
+                <div class="form-group">
+                    <label for="careerExperience">Type of Career Experience *</label>
+                    <div id="careerExperienceContainer" class="form-check">
+                        <!-- Checkboxes will be generated here -->
+                    </div>
+                    <!-- Add an input field for adding a custom option -->
+                    <div class="form-group mt-2">
+                        <label for="addOption">Add Option</label>
+                        <input type="text" class="form-control" id="addOption" placeholder="Type here to add an option">
+                        <button type="button" class="btn btn-secondary mt-2" onclick="addCustomOption()">Add</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="linkedinUrl">LinkedIn URL</label>
+                    <input type="text" class="form-control" id="linkedinUrl" name="linkedinUrl">
+                </div>
+                <div class="form-group">
+                    <label for="entrepreneurialExperience">Entrepreneurial Experience (Number of Years) *</label>
+                    <input type="number" class="form-control" id="entrepreneurialExperience" name="entrepreneurialExperience" required>
+                </div>
+                <div class="form-group">
+                    <label for="previousStartups">Number of Previous Startups *</label>
+                    <input type="number" class="form-control" id="previousStartups" name="previousStartups" required>
+                </div>
+                <div class="form-group">
+                    <label for="currentStartups">Number of Current Startups/Projects *</label>
+                    <input type="number" class="form-control" id="currentStartups" name="currentStartups" required>
+                </div>
+                <div class="form-group">
+                    <label for="entrepreneurialExperienceType">Type of Entrepreneurial Experience *</label>
+                    <div id="entrepreneurialExperienceContainer" class="form-check">
+                        <!-- Checkboxes will be generated here -->
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="startupRoles">Previously held startup roles *</label>
+                    <div id="startupRolesContainer" class="form-check">
+                        <!-- Checkboxes will be generated here -->
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <button type="button" class="btn btn-secondary" onclick="showPage(1)">Back</button>
+                    <button type="button" class="btn btn-primary" onclick="showPage(3)">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 3 -->
+        <div class="form-page" id="page-3">
+            <div class="form-header">
+                <h2>Tell us about your Startup</h2>
+            </div>
+            <div class="form-body">
+                <div class="form-group">
+                    <label>Current Startup Stage *</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="preIdea" name="startupStage" value="Pre-idea" required>
+                        <label class="form-check-label" for="preIdea">Pre-idea: "I don't have an idea"</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="preLaunch" name="startupStage" value="Pre-Launch" required>
+                        <label class="form-check-label" for="preLaunch">Pre-Launch: "I am building my product/service"</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="postLaunch" name="startupStage" value="Post-Launch" required>
+                        <label class="form-check-label" for="postLaunch">Post-Launch: "I am perfecting my product/service"</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="growth" name="startupStage" value="Growth" required>
+                        <label class="form-check-label" for="growth">Growth: "I am scaling my product/service"</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="startupProjectName">Startup Project Name *</label>
+                    <input type="text" class="form-control" id="startupProjectName" name="startupProjectName" required>
+                </div>
+                <div class="form-group">
+                    <label for="firstChallenge">First Challenge *</label>
+                    <select class="form-control" id="firstChallenge" name="firstChallenge" required></select>
+                </div>
+                <div class="form-group">
+                    <label for="secondChallenge">Second Challenge *</label>
+                    <select class="form-control" id="secondChallenge" name="secondChallenge" required></select>
+                </div>
+                <div class="form-group">
+                    <label for="thirdChallenge">Third Challenge *</label>
+                    <select class="form-control" id="thirdChallenge" name="thirdChallenge" required></select>
+                </div>
+                <div class="form-footer">
+                    <button type="button" class="btn btn-secondary" onclick="showPage(2)">Back</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+
+    const employmentStatus = [
+        "Full-time", "Part-time", "Contracting", "Freelancing", 
+        "Self Employed", "Student", "Unemployed", "Other"
+    ];
+    const careerExperiences = [
+        "None", "Education", "Deep Technology", "Mental Health", "Finance", 
+        "Capital Markets", "Lifestyle", "Sustainability", "Agriculture", 
+        "Pharmaceutical", "Hospitality", "Retail", "Property", "Digital Assets", 
+        "Healthcare", "Engineering", "Legal", "Social", "Space", "Wellness", 
+        "Luxury", "Art", "Robotics", "Human Resources", "Gaming", "Media", 
+        "Ecommerce", "Marketing", "Graphic Design", "Machine Learning", 
+        "Telecommunications", "Military", "Science/Research", "Project Management", 
+        "SAAS"
+    ];
+    const entrepreneurialExperiences = [
+        "None", "Education", "Deep Technology", "Mental Health", "Finance", 
+        "Capital Markets", "Lifestyle", "Sustainability", "Agriculture", 
+        "Pharmaceutical", "Hospitality", "Retail", "Property", "Digital Assets", 
+        "Healthcare", "Engineering", "Legal", "Social", "Space", "Wellness", 
+        "Luxury", "Art", "Robotics", "Human Resources", "Gaming", "Media", 
+        "Ecommerce", "Marketing", "Graphic Design", "Machine Learning", 
+        "Telecommunications", "Military", "Science/Research", "Project Management", 
+        "SAAS"
+    ];
+    const startupRoles = [
+        "NONE", "CEO", "CTO", "CPO", "CFO", "CMO", "CSO", 
+        "Advisor", "Executive Director", "Managing Director", "Other"
+    ];
+
+    const challengesData = {
+        "Pre-idea": [
+            "Identifying Viable Opportunities",
+            "Information Overload",
+            "Uncertainty and Ambiguity",
+            "Time Management"
+        ],
+        "Pre-Launch": [
+            "Building a Prototype",
+            "Market Research",
+            "Fundraising",
+            "Team Building"
+        ],
+        "Post-Launch": [
+            "Scaling Operations",
+            "Customer Acquisition",
+            "Product Optimization",
+            "Market Penetration"
+        ],
+        "Growth": [
+            "International Expansion",
+            "Strategic Partnerships",
+            "Diversification",
+            "Sustainability"
+        ]
+    };
+
+    document.addEventListener('DOMContentLoaded', function() {
+        populateOptions('employmentStatusContainer', employmentStatus);
+        populateOptions('careerExperienceContainer', careerExperiences);
+        populateOptions('entrepreneurialExperienceContainer', entrepreneurialExperiences);
+        populateOptions('startupRolesContainer', startupRoles);
+        populateDateOptions();
+    });
+
+    function populateOptions(containerId, options) {
+        const container = document.getElementById(containerId);
+        options.forEach(option => {
+            const id = `${containerId}${option.replace(/\s+/g, '')}`;
+            const checkbox = `
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="${id}" name="${containerId}" value="${option}">
+                    <label class="form-check-label" for="${id}">${option}</label>
+                </div>`;
+            container.insertAdjacentHTML('beforeend', checkbox);
+        });
+    }
+
+    function addCustomOption() {
+        const customOption = document.getElementById('addOption').value;
+        if (customOption.trim() !== '') {
+            careerExperiences.push(customOption);
+            const id = `careerExperienceContainer${customOption.replace(/\s+/g, '')}`;
+            const checkbox = `
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="${id}" name="careerExperience" value="${customOption}">
+                    <label class="form-check-label" for="${id}">${customOption}</label>
+                </div>`;
+            document.getElementById('careerExperienceContainer').insertAdjacentHTML('beforeend', checkbox);
+            document.getElementById('addOption').value = ''; // Clear input field
+        }
+    }
+
+    function showPage(pageNumber) {
+        const pages = document.querySelectorAll('.form-page');
+        pages.forEach(page => {
+            page.classList.remove('active');
+        });
+        document.getElementById(`page-${pageNumber}`).classList.add('active');
+    }
+
+document.getElementById('assessmentForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const formData = new FormData(this); // Get form data
+
+    fetch('https://script.google.com/macros/s/AKfycbwwmQq7ADva5d_q6y19MEK8IeGsSn8yz1oHEOF7irV1Jv40zkk3Y-qT-LHV4dZ-3PWV/exec', {
+        method: 'POST',
+        body: formData  // Send formData directly, no need for JSON.stringify
+    }).then(response => {
+        if (response.ok) {
+            alert('Form submitted successfully!');
+        } else {
+            throw new Error('Failed to submit form');
+        }
+    }).catch(error => {
+        console.error('Error:', error);
+        alert('Error submitting form');
+    });
+});
+
+
+
+
+    function populateDateOptions() {
+        const daySelect = document.getElementById('dobDay');
+        const monthSelect = document.getElementById('dobMonth');
+        const yearSelect = document.getElementById('dobYear');
+
+        for (let i = 1; i <= 31; i++) {
+            const option = document.createElement('option');
+            option.value = i;
+            option.textContent = i;
+            daySelect.appendChild(option);
+        }
+
+        const months = [
+            'January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'
+        ];
+
+        months.forEach((month, index) => {
+            const option = document.createElement('option');
+            option.value = index + 1;
+            option.textContent = month;
+            monthSelect.appendChild(option);
+        });
+
+        const currentYear = new Date().getFullYear();
+        for (let i = currentYear; i >= 1900; i--) {
+            const option = document.createElement('option');
+            option.value = i;
+            option.textContent = i;
+            yearSelect.appendChild(option);
+        }
+    }
+
+    document.querySelectorAll('input[name="startupStage"]').forEach(input => {
+        input.addEventListener('change', function() {
+            loadChallenges(this.value);
+        });
+    });
+
+    function loadChallenges(stage) {
+        const firstChallengeSelect = document.getElementById('firstChallenge');
+        const secondChallengeSelect = document.getElementById('secondChallenge');
+        const thirdChallengeSelect = document.getElementById('thirdChallenge');
+        
+        firstChallengeSelect.innerHTML = ''; // Clear existing options
+        secondChallengeSelect.innerHTML = ''; // Clear existing options
+        thirdChallengeSelect.innerHTML = ''; // Clear existing options
+
+        if (challengesData[stage]) {
+            challengesData[stage].forEach(challenge => {
+                const option = document.createElement('option');
+                option.value = challenge;
+                option.textContent = challenge;
+                firstChallengeSelect.appendChild(option);
+                secondChallengeSelect.appendChild(option.cloneNode(true));
+                thirdChallengeSelect.appendChild(option.cloneNode(true));
+            });
+        }
+    }
+</script>
+</body>
+</html>

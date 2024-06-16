@@ -4,101 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
-    <style>
-        body {
-            background: rgb(77, 14, 203);
-            background: radial-gradient(circle, rgba(77, 14, 203, 1) 0%, rgba(255, 255, 255, 1) 100%);
-            font-family: "Poppins", sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        .quiz-container {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
-            max-width: 600px;
-            width: 100%;
-        }
-
-        .quiz-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 2rem 2rem;
-            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-
-        .quiz-header h2 {
-            font-size: 1.5rem;
-        }
-
-        .quiz-body {
-            padding: 2rem 2rem;
-        }
-
-        .quiz-body h2 {
-            padding: 1rem 0;
-            font-size: 2rem;
-            font-weight: 500;
-            text-align: center;
-            margin: 0;
-        }
-
-        .quiz-body ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .quiz-body ul li {
-            margin: 1rem 0;
-            font-size: 1rem;
-            border: 1px solid #aab7b8;
-            padding: 0.7rem;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .quiz-body ul li label {
-            cursor: pointer;
-            padding: 0 0.4rem;
-        }
-
-        .quiz-footer {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 1rem 2rem;
-            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-        }
-
-        .quiz-footer button {
-            padding: 0.6rem 1.5rem;
-            outline: none;
-            background: #111;
-            border: 0;
-            cursor: pointer;
-            font-family: inherit;
-            border-radius: 5px;
-            color: #fff;
-            opacity: 0.9;
-            transition: 0.3s ease-in-out;
-        }
-
-        .quiz-footer button:hover {
-            opacity: 1;
-        }
-    </style>
+    <link rel="stylesheet" href="static/style.css">
 </head>
-<body>
+<body class="quiz-page">
     <div class="quiz-container" id="quiz">
         <div class="quiz-header">
             <h2 class="header-txt">Assessment</h2>
+            <div class="close-icon" id="close-icon">&#10006;</div>
         </div>
         <div class="quiz-body">
             <h2 id="question">Question Text</h2>
@@ -119,15 +31,26 @@
                     <input type="radio" name="answer" id="d" class="answer" />
                     <label for="d" id="d_text">Questions</label>
                 </li>
+                <li>
+                    <input type="radio" name="answer" id="e" class="answer" />
+                    <label for="e" id="e_text">Questions</label>
+                </li>
             </ul>
         </div>
         <div class="quiz-footer">
-            <div class="quiz-details"></div>
-            <button type="button" id="btn">Submit</button>
+            <div class="quiz-details">
+                <div class="row">
+                    <p id="question-number">1 of 45</p>
+                    <div class="right-aligned">
+                        Confidence Score: <span id="score">0%</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script>
         const quizData = {{ questions|tojson }};
+        console.log(quizData);
 
         const quiz = document.querySelector(".quiz-body");
         const answerEls = document.querySelectorAll(".answer");
@@ -136,10 +59,14 @@
         const b_text = document.getElementById("b_text");
         const c_text = document.getElementById("c_text");
         const d_text = document.getElementById("d_text");
-        const btnSubmit = document.getElementById("btn");
+        const e_text = document.getElementById("e_text");
+        const scoreEl = document.getElementById("score");
+        const questionNumberEl = document.getElementById("question-number");
+        const closeIcon = document.getElementById("close-icon");
 
         let currentQuiz = 0;
-        let score = 0;
+        let answers = [];
+        let isSubmitPage = false;
 
         loadQuiz();
 
@@ -151,7 +78,9 @@
             b_text.innerText = currentQuizData.options[1];
             c_text.innerText = currentQuizData.options[2];
             d_text.innerText = currentQuizData.options[3];
-            document.querySelector(".quiz-details").innerHTML = `<p>${currentQuiz + 1} of ${quizData.length}</p>`;
+            e_text.innerText = currentQuizData.options[4];
+            questionNumberEl.innerText = `${currentQuiz + 1} of ${quizData.length}`;
+            updateScore();
         }
 
         function deselectAnswers() {
@@ -170,18 +99,65 @@
             return answer;
         }
 
-        btnSubmit.addEventListener("click", () => {
+        function nextQuestion() {
             const answer = getSelected();
             if (answer) {
-                currentQuiz++;
-                if (currentQuiz < quizData.length) {
+                answers[currentQuiz] = answer;
+                if (currentQuiz < quizData.length - 1) {
+                    currentQuiz++;
                     loadQuiz();
                 } else {
-                    quiz.innerHTML = `
-                        <h2>You have completed the quiz.</h2>
-                        <button onclick="location.reload()">Restart Quiz</button>
-                    `;
+                    submitQuiz();
                 }
+            } else {
+                alert("Please select an answer before proceeding.");
+            }
+        }
+
+        function updateScore() {
+            let score = (currentQuiz / quizData.length) * 100;
+            scoreEl.innerText = `${score.toFixed(2)}%`;
+        }
+
+        // Add event listeners to radio buttons
+        answerEls.forEach(answerEl => {
+            answerEl.addEventListener("change", () => {
+                setTimeout(nextQuestion, 100); // Add a slight delay to show the selection
+            });
+        });
+
+        function submitQuiz() {
+            fetch('/submit_quiz', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ answers }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                isSubmitPage = true;
+                quiz.innerHTML = `
+                    <h2>${data.message}</h2>
+                    <div class="center-container">
+                        <a href="#" class="restart-btn" onclick="location.reload()">Restart Quiz</a>
+                    </div>
+                `;
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
+
+        closeIcon.addEventListener("click", () => {
+            if (isSubmitPage) {
+                window.location.href = '/results';
+            } else {
+                const answer = getSelected();
+                if (answer) {
+                    answers[currentQuiz] = answer;
+                }
+                submitQuiz();
             }
         });
     </script>

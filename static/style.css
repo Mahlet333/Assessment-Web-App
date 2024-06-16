@@ -1,0 +1,438 @@
+/* Define color variables */
+:root {
+    --primary-color: #11113A;
+    --secondary-color: #E8AFF6;
+    --tertiary-color: #AFB0F6;
+    --accent-color: #FF83A7;
+    --text-color: #111;
+    --background-color: #f7f7f7;
+    --white-color: #fff;
+    --black-color: #000;
+    --border-color: #ccc;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --font-size: 1rem;
+    --font-family: "Poppins", sans-serif;
+}
+
+/* Global Styles */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: var(--font-size);
+    margin: 0;
+    padding: 0;
+}
+
+/* Common Container Styles */
+.container {
+    background-color: var(--white-color);
+    padding: 2rem;
+    box-shadow: 0 0 15px var(--shadow-color);
+    border-radius: 10px;
+    color: var(--text-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px var(--shadow-color);
+}
+
+/* Login Page Styles */
+.login-container {
+    @extend .container;
+    max-width: 400px;
+    text-align: center;
+}
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-container input {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    font-size: var(--font-size);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+.login-container button {
+    padding: 0.8rem;
+    font-size: var(--font-size);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    max-width: 300px;
+}
+.login-container button:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* User Info Page Styles */
+.user-info-container {
+    @extend .container;
+    max-width: 400px;
+    text-align: center;
+}
+.user-info-container h2 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+.user-info-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-info-container input,
+.user-info-container select {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    font-size: var(--font-size);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+.user-info-container button {
+    padding: 0.8rem;
+    font-size: var(--font-size);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    max-width: 300px;
+}
+.user-info-container button:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* Quiz Page Styles */
+body.quiz-page {
+    background: radial-gradient(circle, var(--primary-color) 0%, var(--white-color) 100%);
+    font-family: var(--font-family);
+    overflow: hidden;
+}
+.quiz-container {
+    background: var(--white-color);
+    border-radius: 15px;
+    box-shadow: 0 0 20px 2px var(--shadow-color);
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+}
+.quiz-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    box-shadow: 0 0 5px var(--shadow-color);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: var(--secondary-color);
+    position: relative;
+}
+.quiz-header h2 {
+    font-size: 1.8rem;
+    color: var(--white-color);
+}
+.quiz-body {
+    padding: 2rem;
+}
+.quiz-body h2 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    color: var(--primary-color);
+}
+.quiz-body ul {
+    list-style: none;
+    padding: 0;
+}
+.quiz-body ul li {
+    margin: 1rem 0;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    padding: 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.quiz-body ul li:hover {
+    background-color: var(--tertiary-color);
+    border-color: var(--accent-color);
+}
+.quiz-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: 0 0 5px var(--shadow-color);
+    background-color: var(--secondary-color);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.quiz-footer button {
+    padding: 0.8rem 1.5rem;
+    outline: none;
+    background: var(--primary-color);
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 5px;
+    color: var(--white-color);
+    opacity: 0.9;
+    transition: 0.3s ease-in-out;
+}
+.quiz-footer button:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+.close-icon {
+    font-size: 24px;
+    color: var(--black-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--black-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.restart-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--white-color);
+    background-color: var(--tertiary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.restart-btn:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.quiz-details {
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px;
+    color: var(--text-color);
+}
+.quiz-details .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#question-number {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.right-aligned {
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+    background-color: var(--white-color);
+    box-shadow: 0 0 20px var(--shadow-color);
+    border-radius: 15px;
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    overflow: hidden;
+    padding: 2rem;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+.header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+.header .user-info {
+    display: flex;
+    align-items: center;
+}
+.header .user-info img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+}
+.header .user-info span {
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+.header .logout-btn {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.header .logout-btn:hover {
+    background-color: var(--tertiary-color);
+}
+.content {
+    display: flex;
+    height: calc(100vh - 80px);
+    background-color: var(--background-color);
+    border-radius: 15px;
+}
+.sidebar {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-right: 1px solid var(--border-color);
+    min-width: 240px;
+    overflow-y: auto;
+    border-radius: 15px 0 0 15px;
+}
+.sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+.sidebar a i {
+    margin-right: 0.5rem;
+}
+.sidebar a:hover {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.main-content {
+    padding: 2rem;
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: var(--background-color);
+    border-radius: 0 15px 15px 0;
+}
+.overview-card {
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.overview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px var(--shadow-color);
+}
+.overview-card .info {
+    display: flex;
+    flex-direction: column;
+}
+.overview-card .info h2 {
+    font-size: 1.5rem;
+    margin: 0 0 1rem;
+    color: var(--primary-color);
+}
+.overview-card .info p {
+    margin: 0.5rem 0;
+}
+.overview-card .stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.overview-card .stats p {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.chart-container {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--white-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.chart-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px var(--shadow-color);
+}
+
+.card {
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px var(--shadow-color);
+}
+.card p {
+    margin: 0.5rem 0;
+    color: var(--primary-color);
+}
