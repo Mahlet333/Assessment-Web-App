@@ -1,0 +1,1667 @@
+{
+    "1": [
+        {
+            "Decision Statement": "I rely on deep experience to understand potential customer challenges.",
+            "Decision Statement Value": 1,
+            "Trait Number": 1,
+            "Trait Name": "Customer-Centric",
+            "Scenario": "Understanding Customer Challenge"
+        },
+        {
+            "Decision Statement": "I validate my grasp of customer challenges by discussing problems and solutions with a small group.",
+            "Decision Statement Value": 2,
+            "Trait Number": 1,
+            "Trait Name": "Customer-Centric",
+            "Scenario": "Understanding Customer Challenge"
+        },
+        {
+            "Decision Statement": "I use quick surveys or discussions with a larger group of potential customers to validate challenges.",
+            "Decision Statement Value": 3,
+            "Trait Number": 1,
+            "Trait Name": "Customer-Centric",
+            "Scenario": "Understanding Customer Challenge"
+        },
+        {
+            "Decision Statement": "I actively seek to understand and respond to customer challenges, validating my solution with them.",
+            "Decision Statement Value": 4,
+            "Trait Number": 1,
+            "Trait Name": "Customer-Centric",
+            "Scenario": "Understanding Customer Challenge"
+        },
+        {
+            "Decision Statement": "I actively explore my customers' challenges through in-depth discussions without presenting my solution.",
+            "Decision Statement Value": 5,
+            "Trait Number": 1,
+            "Trait Name": "Customer-Centric",
+            "Scenario": "Understanding Customer Challenge"
+        }
+    ],
+    "2": [
+        {
+            "Decision Statement": "I usually handle conflict of ideas by myself to favor progress.",
+            "Decision Statement Value": 1,
+            "Trait Number": 2,
+            "Trait Name": "Collaborative",
+            "Scenario": "Conflict of ideas or approaches"
+        },
+        {
+            "Decision Statement": "I often prioritize my ideas during conflicts but need a convincing argument to change my approach.",
+            "Decision Statement Value": 2,
+            "Trait Number": 2,
+            "Trait Name": "Collaborative",
+            "Scenario": "Conflict of ideas or approaches"
+        },
+        {
+            "Decision Statement": "I occasionally consider input from others and try to reach common ground when conflict arises.",
+            "Decision Statement Value": 3,
+            "Trait Number": 2,
+            "Trait Name": "Collaborative",
+            "Scenario": "Conflict of ideas or approaches"
+        },
+        {
+            "Decision Statement": "I actively engage in collaborative discussions and seek common ground in idea conflicts.",
+            "Decision Statement Value": 4,
+            "Trait Number": 2,
+            "Trait Name": "Collaborative",
+            "Scenario": "Conflict of ideas or approaches"
+        },
+        {
+            "Decision Statement": "I value diverse opinions and encourage collaboration for best results in idea conflicts.",
+            "Decision Statement Value": 5,
+            "Trait Number": 2,
+            "Trait Name": "Collaborative",
+            "Scenario": "Conflict of ideas or approaches"
+        }
+    ],
+    "3": [
+        {
+            "Decision Statement": "I take whatever time is required to gain clarity before deciding on my activities when the decision isn't clear to me.",
+            "Decision Statement Value": 1,
+            "Trait Number": 3,
+            "Trait Name": "Agile",
+            "Scenario": "Rapid Decision-Making"
+        },
+        {
+            "Decision Statement": "I occasionally spend more time on decisions to my satisfaction but actively seek guidance from others in the process.",
+            "Decision Statement Value": 2,
+            "Trait Number": 3,
+            "Trait Name": "Agile",
+            "Scenario": "Rapid Decision-Making"
+        },
+        {
+            "Decision Statement": "I like making quick decisions and seek guidance from knowledgeable individuals in my network when in doubt.",
+            "Decision Statement Value": 3,
+            "Trait Number": 3,
+            "Trait Name": "Agile",
+            "Scenario": "Rapid Decision-Making"
+        },
+        {
+            "Decision Statement": "I seek quick decision-making with or without help and prompt responses to opportunities or challenges in my endeavors.",
+            "Decision Statement Value": 4,
+            "Trait Number": 3,
+            "Trait Name": "Agile",
+            "Scenario": "Rapid Decision-Making"
+        },
+        {
+            "Decision Statement": "I make quick decisions, consistently fostering quick and adaptive decision-making as a core strength.",
+            "Decision Statement Value": 5,
+            "Trait Number": 3,
+            "Trait Name": "Agile",
+            "Scenario": "Rapid Decision-Making"
+        }
+    ],
+    "4": [
+        {
+            "Decision Statement": "I work best when I utilize everything I have learned to be most productive.",
+            "Decision Statement Value": 1,
+            "Trait Number": 3,
+            "Trait Name": "Agile",
+            "Scenario": "Openness to Change"
+        },
+        {
+            "Decision Statement": "I am open to learning new approaches for productivity, but my adoption depends on widespread adoption by others.",
+            "Decision Statement Value": 2,
+            "Trait Number": 3,
+            "Trait Name": "Agile",
+            "Scenario": "Openness to Change"
+        },
+        {
+            "Decision Statement": "I am open to change with a convincing argument, but I don\u2019t typically seek out new approaches, unless I have to.",
+            "Decision Statement Value": 3,
+            "Trait Number": 3,
+            "Trait Name": "Agile",
+            "Scenario": "Openness to Change"
+        },
+        {
+            "Decision Statement": "I actively research new approaches for productivity, acknowledging short-term slowdowns for long-term benefits.",
+            "Decision Statement Value": 4,
+            "Trait Number": 3,
+            "Trait Name": "Agile",
+            "Scenario": "Openness to Change"
+        },
+        {
+            "Decision Statement": "I get excited to try new approaches for productivity, encouraging others for accelerated learning.",
+            "Decision Statement Value": 5,
+            "Trait Number": 3,
+            "Trait Name": "Agile",
+            "Scenario": "Openness to Change"
+        }
+    ],
+    "5": [
+        {
+            "Decision Statement": "I build my products or services first, inviting customer feedback.",
+            "Decision Statement Value": 1,
+            "Trait Number": 1,
+            "Trait Name": "Customer-Centric",
+            "Scenario": "Validating products and services"
+        },
+        {
+            "Decision Statement": "I occasionally collect feedback during validation but remain confident in my understanding of customer needs.",
+            "Decision Statement Value": 2,
+            "Trait Number": 1,
+            "Trait Name": "Customer-Centric",
+            "Scenario": "Validating products and services"
+        },
+        {
+            "Decision Statement": "I actively seek customer input in validation, recognizing the need for improvement in incorporating insights.",
+            "Decision Statement Value": 3,
+            "Trait Number": 1,
+            "Trait Name": "Customer-Centric",
+            "Scenario": "Validating products and services"
+        },
+        {
+            "Decision Statement": "Customer validation is crucial; I consistently gather and use feedback to refine offerings.",
+            "Decision Statement Value": 4,
+            "Trait Number": 1,
+            "Trait Name": "Customer-Centric",
+            "Scenario": "Validating products and services"
+        },
+        {
+            "Decision Statement": "I involve customers in the development process to ensure consideration of their needs.",
+            "Decision Statement Value": 5,
+            "Trait Number": 1,
+            "Trait Name": "Customer-Centric",
+            "Scenario": "Validating products and services"
+        }
+    ],
+    "6": [
+        {
+            "Decision Statement": "I believe I'm the right person to do the job, and I'll seek help when needed.",
+            "Decision Statement Value": 1,
+            "Trait Number": 2,
+            "Trait Name": "Collaborative",
+            "Scenario": "Shared Responsibility"
+        },
+        {
+            "Decision Statement": "While breaking down responsibilities, I tend to take on more parts than my team.",
+            "Decision Statement Value": 2,
+            "Trait Number": 2,
+            "Trait Name": "Collaborative",
+            "Scenario": "Shared Responsibility"
+        },
+        {
+            "Decision Statement": "I advocate for fair distribution of responsibilities within the team, including myself.",
+            "Decision Statement Value": 3,
+            "Trait Number": 2,
+            "Trait Name": "Collaborative",
+            "Scenario": "Shared Responsibility"
+        },
+        {
+            "Decision Statement": "I offer team members the chance to take on more responsibilities, and I handle what remains.",
+            "Decision Statement Value": 4,
+            "Trait Number": 2,
+            "Trait Name": "Collaborative",
+            "Scenario": "Shared Responsibility"
+        },
+        {
+            "Decision Statement": "I distribute as close to 100% responsibilities towards my team as possible.",
+            "Decision Statement Value": 5,
+            "Trait Number": 2,
+            "Trait Name": "Collaborative",
+            "Scenario": "Shared Responsibility"
+        }
+    ],
+    "7": [
+        {
+            "Decision Statement": "I see little reason to change my business model until I exhaust all efforts to validate its effectiveness.",
+            "Decision Statement Value": 1,
+            "Trait Number": 3,
+            "Trait Name": "Agile",
+            "Scenario": "Business model"
+        },
+        {
+            "Decision Statement": "I prioritize spending time and effort on validating an existing business model before considering any changes.",
+            "Decision Statement Value": 2,
+            "Trait Number": 3,
+            "Trait Name": "Agile",
+            "Scenario": "Business model"
+        },
+        {
+            "Decision Statement": "I begin with a business model and adapt it based on validation with potential customers.",
+            "Decision Statement Value": 3,
+            "Trait Number": 3,
+            "Trait Name": "Agile",
+            "Scenario": "Business model"
+        },
+        {
+            "Decision Statement": "I experiment with multiple business models, adapting to find the one that captures customer attention.",
+            "Decision Statement Value": 4,
+            "Trait Number": 3,
+            "Trait Name": "Agile",
+            "Scenario": "Business model"
+        },
+        {
+            "Decision Statement": "I test various business models, adapting until one stands out as the winning choice.",
+            "Decision Statement Value": 5,
+            "Trait Number": 3,
+            "Trait Name": "Agile",
+            "Scenario": "Business model"
+        }
+    ],
+    "8": [
+        {
+            "Decision Statement": "I consult with a select few people who will likely support my decisions.",
+            "Decision Statement Value": 1,
+            "Trait Number": 2,
+            "Trait Name": "Collaborative",
+            "Scenario": "Inclusive Decision making"
+        },
+        {
+            "Decision Statement": "I engage both close contacts and experts in decision-making, but I am selective in accepting opinions.",
+            "Decision Statement Value": 2,
+            "Trait Number": 2,
+            "Trait Name": "Collaborative",
+            "Scenario": "Inclusive Decision making"
+        },
+        {
+            "Decision Statement": "I value inclusive decision-making, seeking input, but can improve capturing and understanding others' opinions.",
+            "Decision Statement Value": 3,
+            "Trait Number": 2,
+            "Trait Name": "Collaborative",
+            "Scenario": "Inclusive Decision making"
+        },
+        {
+            "Decision Statement": "I actively involve others in decision-making, valuing opposing opinions and seeking input from team members.",
+            "Decision Statement Value": 4,
+            "Trait Number": 2,
+            "Trait Name": "Collaborative",
+            "Scenario": "Inclusive Decision making"
+        },
+        {
+            "Decision Statement": "I foster an environment of collective decision-making for optimal outcomes.",
+            "Decision Statement Value": 5,
+            "Trait Number": 2,
+            "Trait Name": "Collaborative",
+            "Scenario": "Inclusive Decision making"
+        }
+    ],
+    "9": [
+        {
+            "Decision Statement": "I acknowledge customers may discontinue our services upon achieving their goals or due to a lack of commitment.",
+            "Decision Statement Value": 1,
+            "Trait Number": 1,
+            "Trait Name": "Customer-Centric",
+            "Scenario": "Customer-retention"
+        },
+        {
+            "Decision Statement": "While valuing customer retention, I find obtaining feedback from disengaged customers time-consuming.",
+            "Decision Statement Value": 2,
+            "Trait Number": 1,
+            "Trait Name": "Customer-Centric",
+            "Scenario": "Customer-retention"
+        },
+        {
+            "Decision Statement": "I occasionally seek reasons for customers stopping our service, lacking a consistent approach.",
+            "Decision Statement Value": 3,
+            "Trait Number": 1,
+            "Trait Name": "Customer-Centric",
+            "Scenario": "Customer-retention"
+        },
+        {
+            "Decision Statement": "I prioritize customer retention, consistently implementing effective strategies for satisfaction.",
+            "Decision Statement Value": 4,
+            "Trait Number": 1,
+            "Trait Name": "Customer-Centric",
+            "Scenario": "Customer-retention"
+        },
+        {
+            "Decision Statement": "I go above and beyond with retention strategies to ensure long-term customer satisfaction and loyalty.",
+            "Decision Statement Value": 5,
+            "Trait Number": 1,
+            "Trait Name": "Customer-Centric",
+            "Scenario": "Customer-retention"
+        }
+    ],
+    "10": [
+        {
+            "Decision Statement": "I prefer focusing on what I know to complete tasks rather than trying something new.",
+            "Decision Statement Value": 1,
+            "Trait Number": 4,
+            "Trait Name": "Innovative",
+            "Scenario": "Showing curiosity and Constant Pursuit of Learning"
+        },
+        {
+            "Decision Statement": "I may consider new ideas, but I usually stick to my current methods.",
+            "Decision Statement Value": 2,
+            "Trait Number": 4,
+            "Trait Name": "Innovative",
+            "Scenario": "Showing curiosity and Constant Pursuit of Learning"
+        },
+        {
+            "Decision Statement": "I experiment with a new approach briefly before deciding on long-term adoption.",
+            "Decision Statement Value": 3,
+            "Trait Number": 4,
+            "Trait Name": "Innovative",
+            "Scenario": "Showing curiosity and Constant Pursuit of Learning"
+        },
+        {
+            "Decision Statement": "Implementing new approaches demands sustained commitment. I track progress to ensure continuous improvement.",
+            "Decision Statement Value": 4,
+            "Trait Number": 4,
+            "Trait Name": "Innovative",
+            "Scenario": "Showing curiosity and Constant Pursuit of Learning"
+        },
+        {
+            "Decision Statement": "I champion trying new things and actively encourage others to do the same.",
+            "Decision Statement Value": 5,
+            "Trait Number": 4,
+            "Trait Name": "Innovative",
+            "Scenario": "Showing curiosity and Constant Pursuit of Learning"
+        }
+    ],
+    "11": [
+        {
+            "Decision Statement": "I explain to investors how I'll use their funds, covering team salaries and development, including my own.",
+            "Decision Statement Value": 1,
+            "Trait Number": 5,
+            "Trait Name": "Risk-Taking",
+            "Scenario": "Using personal savings"
+        },
+        {
+            "Decision Statement": "I use investors' funds for team salaries, including mine, supporting business growth, and invest my personal funds in my development.",
+            "Decision Statement Value": 2,
+            "Trait Number": 5,
+            "Trait Name": "Risk-Taking",
+            "Scenario": "Using personal savings"
+        },
+        {
+            "Decision Statement": "I use investors' funds for company operations and growth without taking a salary. I rely on personal funds to support myself.",
+            "Decision Statement Value": 3,
+            "Trait Number": 5,
+            "Trait Name": "Risk-Taking",
+            "Scenario": "Using personal savings"
+        },
+        {
+            "Decision Statement": "I sustain the business initially with personal funds, aiming for traction and revenue to attract external investor funding.",
+            "Decision Statement Value": 4,
+            "Trait Number": 5,
+            "Trait Name": "Risk-Taking",
+            "Scenario": "Using personal savings"
+        },
+        {
+            "Decision Statement": "I don't depend on investors for survival; I use their funds strategically to thrive in business.",
+            "Decision Statement Value": 5,
+            "Trait Number": 5,
+            "Trait Name": "Risk-Taking",
+            "Scenario": "Using personal savings"
+        }
+    ],
+    "12": [
+        {
+            "Decision Statement": "I prioritize meeting immediate income needs to ensure the business's survival.",
+            "Decision Statement Value": 1,
+            "Trait Number": 6,
+            "Trait Name": "Visionary",
+            "Scenario": "Setting ambitious goals"
+        },
+        {
+            "Decision Statement": "I focus on revenue to build a self-sufficient team, with some consideration for future goals.",
+            "Decision Statement Value": 2,
+            "Trait Number": 6,
+            "Trait Name": "Visionary",
+            "Scenario": "Setting ambitious goals"
+        },
+        {
+            "Decision Statement": "I experiment with impactful and relatable products or services for potential customers.",
+            "Decision Statement Value": 3,
+            "Trait Number": 6,
+            "Trait Name": "Visionary",
+            "Scenario": "Setting ambitious goals"
+        },
+        {
+            "Decision Statement": "My priority is impact over revenue, prioritizing customer needs before exploring income streams.",
+            "Decision Statement Value": 4,
+            "Trait Number": 6,
+            "Trait Name": "Visionary",
+            "Scenario": "Setting ambitious goals"
+        },
+        {
+            "Decision Statement": "I systematically solve problems individually as part of a grand vision, revenue is an afterthought.",
+            "Decision Statement Value": 5,
+            "Trait Number": 6,
+            "Trait Name": "Visionary",
+            "Scenario": "Setting ambitious goals"
+        }
+    ],
+    "13": [
+        {
+            "Decision Statement": "I prefer traditional methods to implement new ideas\u201d.",
+            "Decision Statement Value": 1,
+            "Trait Number": 4,
+            "Trait Name": "Innovative",
+            "Scenario": "Encouraging a Culture of Creativity"
+        },
+        {
+            "Decision Statement": "I'm open to new concepts but tend to prefer traditional methods.",
+            "Decision Statement Value": 2,
+            "Trait Number": 4,
+            "Trait Name": "Innovative",
+            "Scenario": "Encouraging a Culture of Creativity"
+        },
+        {
+            "Decision Statement": "I appreciate and support some creative initiatives within projects.",
+            "Decision Statement Value": 3,
+            "Trait Number": 4,
+            "Trait Name": "Innovative",
+            "Scenario": "Encouraging a Culture of Creativity"
+        },
+        {
+            "Decision Statement": "I actively encourage and contribute to a culture of creativity within projects.",
+            "Decision Statement Value": 4,
+            "Trait Number": 4,
+            "Trait Name": "Innovative",
+            "Scenario": "Encouraging a Culture of Creativity"
+        },
+        {
+            "Decision Statement": "I am obsessed with innovation and fostering creativity in my projects.",
+            "Decision Statement Value": 5,
+            "Trait Number": 4,
+            "Trait Name": "Innovative",
+            "Scenario": "Encouraging a Culture of Creativity"
+        }
+    ],
+    "14": [
+        {
+            "Decision Statement": "I aim to generate enough revenue to match my salary before leaving my stable job.",
+            "Decision Statement Value": 1,
+            "Trait Number": 5,
+            "Trait Name": "Risk-Taking",
+            "Scenario": "Quitting your job"
+        },
+        {
+            "Decision Statement": "I require a proven business plan with 50% of my salary as revenue before leaving my stable job.",
+            "Decision Statement Value": 2,
+            "Trait Number": 5,
+            "Trait Name": "Risk-Taking",
+            "Scenario": "Quitting your job"
+        },
+        {
+            "Decision Statement": "I'm prepared to quit my job for a promising opportunity. With confidence in boosting revenue, I need savings for the first 6 months.",
+            "Decision Statement Value": 3,
+            "Trait Number": 5,
+            "Trait Name": "Risk-Taking",
+            "Scenario": "Quitting your job"
+        },
+        {
+            "Decision Statement": "I'm leaving my job for a promising business opportunity aligned with my goals. I need one year's savings for a smooth transition.",
+            "Decision Statement Value": 4,
+            "Trait Number": 5,
+            "Trait Name": "Risk-Taking",
+            "Scenario": "Quitting your job"
+        },
+        {
+            "Decision Statement": "I am prepared to quit my job for an innovative business idea, embracing uncertainty for potential success.",
+            "Decision Statement Value": 5,
+            "Trait Number": 5,
+            "Trait Name": "Risk-Taking",
+            "Scenario": "Quitting your job"
+        }
+    ],
+    "15": [
+        {
+            "Decision Statement": "I focus on how my team can contribute to the company's brand, revenue, and growth.",
+            "Decision Statement Value": 1,
+            "Trait Number": 6,
+            "Trait Name": "Visionary",
+            "Scenario": "Inspiring others"
+        },
+        {
+            "Decision Statement": "I like to reward my team with monetary incentives like promotions and bonuses.",
+            "Decision Statement Value": 2,
+            "Trait Number": 6,
+            "Trait Name": "Visionary",
+            "Scenario": "Inspiring others"
+        },
+        {
+            "Decision Statement": "I use a mix of incentives and a sense of belonging to inspire the team.",
+            "Decision Statement Value": 3,
+            "Trait Number": 6,
+            "Trait Name": "Visionary",
+            "Scenario": "Inspiring others"
+        },
+        {
+            "Decision Statement": "I frequently engage with the team in gatherings, emphasizing shared goals, and rarely use monetary incentives.",
+            "Decision Statement Value": 4,
+            "Trait Number": 6,
+            "Trait Name": "Visionary",
+            "Scenario": "Inspiring others"
+        },
+        {
+            "Decision Statement": "I prioritize one-on-one meetings with team members to align goals and motivations, avoiding monetary incentives.",
+            "Decision Statement Value": 5,
+            "Trait Number": 6,
+            "Trait Name": "Visionary",
+            "Scenario": "Inspiring others"
+        }
+    ],
+    "16": [
+        {
+            "Decision Statement": "I primarily rely on traditional methods to minimize the risk of failures.",
+            "Decision Statement Value": 1,
+            "Trait Number": 4,
+            "Trait Name": "Innovative",
+            "Scenario": "Openness to Failure and Learning from Mistakes"
+        },
+        {
+            "Decision Statement": "I'm open to new approaches but prefer minimizing failures by sticking to traditional methods.",
+            "Decision Statement Value": 2,
+            "Trait Number": 4,
+            "Trait Name": "Innovative",
+            "Scenario": "Openness to Failure and Learning from Mistakes"
+        },
+        {
+            "Decision Statement": "I actively seek new ideas, enjoy experimenting, and learn from mistakes to minimize failures.",
+            "Decision Statement Value": 3,
+            "Trait Number": 4,
+            "Trait Name": "Innovative",
+            "Scenario": "Openness to Failure and Learning from Mistakes"
+        },
+        {
+            "Decision Statement": "I thrive on exploring creative solutions, viewing failure as a learning opportunity.",
+            "Decision Statement Value": 4,
+            "Trait Number": 4,
+            "Trait Name": "Innovative",
+            "Scenario": "Openness to Failure and Learning from Mistakes"
+        },
+        {
+            "Decision Statement": "I consistently strive for innovation, acknowledging failure as an essential part of the journey.",
+            "Decision Statement Value": 5,
+            "Trait Number": 4,
+            "Trait Name": "Innovative",
+            "Scenario": "Openness to Failure and Learning from Mistakes"
+        }
+    ],
+    "17": [
+        {
+            "Decision Statement": "I prefer working alone at first to make progress on my idea before sharing it.",
+            "Decision Statement Value": 1,
+            "Trait Number": 5,
+            "Trait Name": "Risk-Taking",
+            "Scenario": "Sharing a business idea"
+        },
+        {
+            "Decision Statement": "I discuss my idea with trusted individuals or those who I think cannot progress on it without me.",
+            "Decision Statement Value": 2,
+            "Trait Number": 5,
+            "Trait Name": "Risk-Taking",
+            "Scenario": "Sharing a business idea"
+        },
+        {
+            "Decision Statement": "I share selective information about my idea with people who can provide valuable feedback.",
+            "Decision Statement Value": 3,
+            "Trait Number": 5,
+            "Trait Name": "Risk-Taking",
+            "Scenario": "Sharing a business idea"
+        },
+        {
+            "Decision Statement": "I share my business idea with strangers, even if I'm only three months into my journey.",
+            "Decision Statement Value": 4,
+            "Trait Number": 5,
+            "Trait Name": "Risk-Taking",
+            "Scenario": "Sharing a business idea"
+        },
+        {
+            "Decision Statement": "I'm not worried about idea theft for concepts I haven't fully researched; I believe in sharing ideas.",
+            "Decision Statement Value": 5,
+            "Trait Number": 5,
+            "Trait Name": "Risk-Taking",
+            "Scenario": "Sharing a business idea"
+        }
+    ],
+    "18": [
+        {
+            "Decision Statement": "Being the country's leading company is enough for me to be satisfied with my work.",
+            "Decision Statement Value": 1,
+            "Trait Number": 6,
+            "Trait Name": "Visionary",
+            "Scenario": "Thinking globally"
+        },
+        {
+            "Decision Statement": "I'm excited about operating in nearby countries, not concerned about other regions.",
+            "Decision Statement Value": 2,
+            "Trait Number": 6,
+            "Trait Name": "Visionary",
+            "Scenario": "Thinking globally"
+        },
+        {
+            "Decision Statement": "The idea of a global company would mean a successful company for me.",
+            "Decision Statement Value": 3,
+            "Trait Number": 6,
+            "Trait Name": "Visionary",
+            "Scenario": "Thinking globally"
+        },
+        {
+            "Decision Statement": "Completing the company\u2019s mission means making our solution available in every major city worldwide.",
+            "Decision Statement Value": 4,
+            "Trait Number": 6,
+            "Trait Name": "Visionary",
+            "Scenario": "Thinking globally"
+        },
+        {
+            "Decision Statement": "My goal is to make our solution accessible to all, regardless of location.",
+            "Decision Statement Value": 5,
+            "Trait Number": 6,
+            "Trait Name": "Visionary",
+            "Scenario": "Thinking globally"
+        }
+    ],
+    "19": [
+        {
+            "Decision Statement": "I favor a relaxed work approach to stay mindful, avoiding crucial details' oversight, as extra hours slow progress.",
+            "Decision Statement Value": 1,
+            "Trait Number": 7,
+            "Trait Name": "Hustler",
+            "Scenario": "Persistent Work Ethic"
+        },
+        {
+            "Decision Statement": "I balance effort with downtime, making my work ethic consistent while occasionally going above and beyond.",
+            "Decision Statement Value": 2,
+            "Trait Number": 7,
+            "Trait Name": "Hustler",
+            "Scenario": "Persistent Work Ethic"
+        },
+        {
+            "Decision Statement": "I prioritize project success with a strong work ethic, balancing it with breaks for a healthy work-life mix.",
+            "Decision Statement Value": 3,
+            "Trait Number": 7,
+            "Trait Name": "Hustler",
+            "Scenario": "Persistent Work Ethic"
+        },
+        {
+            "Decision Statement": "I consistently go the extra mile, putting in persistent effort and long hours when needed to achieve goals.",
+            "Decision Statement Value": 4,
+            "Trait Number": 7,
+            "Trait Name": "Hustler",
+            "Scenario": "Persistent Work Ethic"
+        },
+        {
+            "Decision Statement": "I am fully committed to giving my best and going beyond for success, with flexibility in working hours.",
+            "Decision Statement Value": 5,
+            "Trait Number": 7,
+            "Trait Name": "Hustler",
+            "Scenario": "Persistent Work Ethic"
+        }
+    ],
+    "20": [
+        {
+            "Decision Statement": "I'm not keen on sharing knowledge or inspiring others; I prefer keeping my insights to myself.",
+            "Decision Statement Value": 1,
+            "Trait Number": 8,
+            "Trait Name": "Passionate",
+            "Scenario": "Eagerness to Inspire and Share Knowledge"
+        },
+        {
+            "Decision Statement": "I occasionally share knowledge but don't consistently prioritize or express strong eagerness to inspire others.",
+            "Decision Statement Value": 2,
+            "Trait Number": 8,
+            "Trait Name": "Passionate",
+            "Scenario": "Eagerness to Inspire and Share Knowledge"
+        },
+        {
+            "Decision Statement": "I am moderately eager to share knowledge, contributing when I can but not actively seeking opportunities to share insights.",
+            "Decision Statement Value": 3,
+            "Trait Number": 8,
+            "Trait Name": "Passionate",
+            "Scenario": "Eagerness to Inspire and Share Knowledge"
+        },
+        {
+            "Decision Statement": "I'm eager to share knowledge and experiences, actively inspiring others and contributing to the community.",
+            "Decision Statement Value": 4,
+            "Trait Number": 8,
+            "Trait Name": "Passionate",
+            "Scenario": "Eagerness to Inspire and Share Knowledge"
+        },
+        {
+            "Decision Statement": "I'm passionate about inspiring and sharing knowledge, actively seeking mentorship, and contributing to community growth.",
+            "Decision Statement Value": 5,
+            "Trait Number": 8,
+            "Trait Name": "Passionate",
+            "Scenario": "Eagerness to Inspire and Share Knowledge"
+        }
+    ],
+    "21": [
+        {
+            "Decision Statement": "I prefer not to highlight my initial product/service launch, as it didn't attract customers.",
+            "Decision Statement Value": 1,
+            "Trait Number": 9,
+            "Trait Name": "Resilient",
+            "Scenario": "Launched products or services without customers"
+        },
+        {
+            "Decision Statement": "I acknowledge a failed product/service launch, but I avoid discussing it openly.",
+            "Decision Statement Value": 2,
+            "Trait Number": 9,
+            "Trait Name": "Resilient",
+            "Scenario": "Launched products or services without customers"
+        },
+        {
+            "Decision Statement": "I discuss a failed product launch with people close to me, seeking support and understanding.",
+            "Decision Statement Value": 3,
+            "Trait Number": 9,
+            "Trait Name": "Resilient",
+            "Scenario": "Launched products or services without customers"
+        },
+        {
+            "Decision Statement": "I recognize that a failed launch is a learning experience that can benefit me and others by sharing the story.",
+            "Decision Statement Value": 4,
+            "Trait Number": 9,
+            "Trait Name": "Resilient",
+            "Scenario": "Launched products or services without customers"
+        },
+        {
+            "Decision Statement": "The story of my failed product/service launch is a badge of honor; I talk about it proudly.",
+            "Decision Statement Value": 5,
+            "Trait Number": 9,
+            "Trait Name": "Resilient",
+            "Scenario": "Launched products or services without customers"
+        }
+    ],
+    "22": [
+        {
+            "Decision Statement": "I don't prioritize time management; I focus on completing tasks, taking as long as needed.",
+            "Decision Statement Value": 1,
+            "Trait Number": 7,
+            "Trait Name": "Hustler",
+            "Scenario": "Effective Time Management"
+        },
+        {
+            "Decision Statement": "I keep time management in mind, managing well overall, but sometimes struggle to prioritize tasks effectively.",
+            "Decision Statement Value": 2,
+            "Trait Number": 7,
+            "Trait Name": "Hustler",
+            "Scenario": "Effective Time Management"
+        },
+        {
+            "Decision Statement": "I strike a balance in managing time, meeting deadlines, and prioritizing effectively.",
+            "Decision Statement Value": 3,
+            "Trait Number": 7,
+            "Trait Name": "Hustler",
+            "Scenario": "Effective Time Management"
+        },
+        {
+            "Decision Statement": "I effectively manage time, meet deadlines, and prioritize tasks for maximum project productivity.",
+            "Decision Statement Value": 4,
+            "Trait Number": 7,
+            "Trait Name": "Hustler",
+            "Scenario": "Effective Time Management"
+        },
+        {
+            "Decision Statement": "I excel in time management, optimizing my schedule, setting clear priorities, and achieving high productivity in projects.",
+            "Decision Statement Value": 5,
+            "Trait Number": 7,
+            "Trait Name": "Hustler",
+            "Scenario": "Effective Time Management"
+        }
+    ],
+    "23": [
+        {
+            "Decision Statement": "I prioritize personal comfort over making significant sacrifices for my professional pursuits.",
+            "Decision Statement Value": 1,
+            "Trait Number": 8,
+            "Trait Name": "Passionate",
+            "Scenario": "Dedication and Personal Sacrifice for the Business"
+        },
+        {
+            "Decision Statement": "I show dedication and make occasional sacrifices, but I don't consistently prioritize them in my journey.",
+            "Decision Statement Value": 2,
+            "Trait Number": 8,
+            "Trait Name": "Passionate",
+            "Scenario": "Dedication and Personal Sacrifice for the Business"
+        },
+        {
+            "Decision Statement": "I am dedicated and willing to make sacrifices for professional goals, balancing them with personal aspects.",
+            "Decision Statement Value": 3,
+            "Trait Number": 8,
+            "Trait Name": "Passionate",
+            "Scenario": "Dedication and Personal Sacrifice for the Business"
+        },
+        {
+            "Decision Statement": "I am deeply committed to my projects, willing to make sacrifices, prioritizing endeavors over personal comfort.",
+            "Decision Statement Value": 4,
+            "Trait Number": 8,
+            "Trait Name": "Passionate",
+            "Scenario": "Dedication and Personal Sacrifice for the Business"
+        },
+        {
+            "Decision Statement": "I am highly dedicated to my professional journey, willing to make continuous sacrifices for project success.",
+            "Decision Statement Value": 5,
+            "Trait Number": 8,
+            "Trait Name": "Passionate",
+            "Scenario": "Dedication and Personal Sacrifice for the Business"
+        }
+    ],
+    "24": [
+        {
+            "Decision Statement": "When my business faces financial setbacks, I often think about shifting my focus to my career.",
+            "Decision Statement Value": 1,
+            "Trait Number": 9,
+            "Trait Name": "Resilient",
+            "Scenario": "Facing financial setbacks"
+        },
+        {
+            "Decision Statement": "I acknowledge the challenges of financial setbacks and consider various strategies to adapt and improve.",
+            "Decision Statement Value": 2,
+            "Trait Number": 9,
+            "Trait Name": "Resilient",
+            "Scenario": "Facing financial setbacks"
+        },
+        {
+            "Decision Statement": "I actively address stress during financial downturns, putting effort into overcoming obstacles.",
+            "Decision Statement Value": 3,
+            "Trait Number": 9,
+            "Trait Name": "Resilient",
+            "Scenario": "Facing financial setbacks"
+        },
+        {
+            "Decision Statement": "I consistently demonstrate determination and perseverance to navigate through financial setbacks.",
+            "Decision Statement Value": 4,
+            "Trait Number": 9,
+            "Trait Name": "Resilient",
+            "Scenario": "Facing financial setbacks"
+        },
+        {
+            "Decision Statement": "I thrive on financial setbacks, seeing them as opportunities for growth and innovation.",
+            "Decision Statement Value": 5,
+            "Trait Number": 9,
+            "Trait Name": "Resilient",
+            "Scenario": "Facing financial setbacks"
+        }
+    ],
+    "25": [
+        {
+            "Decision Statement": "I often compromise during negotiations and reach favorable agreements for the other party.",
+            "Decision Statement Value": 1,
+            "Trait Number": 7,
+            "Trait Name": "Hustler",
+            "Scenario": "Effective Negotiation Skills"
+        },
+        {
+            "Decision Statement": "While successful in some negotiations, I face challenges achieving favorable outcomes in others.",
+            "Decision Statement Value": 2,
+            "Trait Number": 7,
+            "Trait Name": "Hustler",
+            "Scenario": "Effective Negotiation Skills"
+        },
+        {
+            "Decision Statement": "I possess decent negotiating skills, able to reach fair agreements in most situations.",
+            "Decision Statement Value": 3,
+            "Trait Number": 7,
+            "Trait Name": "Hustler",
+            "Scenario": "Effective Negotiation Skills"
+        },
+        {
+            "Decision Statement": "I excel in effective negotiation, consistently securing favorable and mutually beneficial agreements.",
+            "Decision Statement Value": 4,
+            "Trait Number": 7,
+            "Trait Name": "Hustler",
+            "Scenario": "Effective Negotiation Skills"
+        },
+        {
+            "Decision Statement": "I excel in negotiation, navigating complexity, securing advantageous deals, and consistently leveraging skills for success.",
+            "Decision Statement Value": 5,
+            "Trait Number": 7,
+            "Trait Name": "Hustler",
+            "Scenario": "Effective Negotiation Skills"
+        }
+    ],
+    "26": [
+        {
+            "Decision Statement": "I focus on getting the job done and avoid distractions from group discussions.",
+            "Decision Statement Value": 1,
+            "Trait Number": 8,
+            "Trait Name": "Passionate",
+            "Scenario": "Positive Energy and Enthusiasm"
+        },
+        {
+            "Decision Statement": "While prioritizing task completion, I may have passionate conversations or assist others.",
+            "Decision Statement Value": 2,
+            "Trait Number": 8,
+            "Trait Name": "Passionate",
+            "Scenario": "Positive Energy and Enthusiasm"
+        },
+        {
+            "Decision Statement": "I aim to balance my work and supportive conversations for mutual benefit.",
+            "Decision Statement Value": 3,
+            "Trait Number": 8,
+            "Trait Name": "Passionate",
+            "Scenario": "Positive Energy and Enthusiasm"
+        },
+        {
+            "Decision Statement": "I consistently bring positive energy and enthusiasm to my discussions about my work.",
+            "Decision Statement Value": 4,
+            "Trait Number": 8,
+            "Trait Name": "Passionate",
+            "Scenario": "Positive Energy and Enthusiasm"
+        },
+        {
+            "Decision Statement": "I bring infectious enthusiasm and actively foster a positive, energetic environment in all my pursuits.",
+            "Decision Statement Value": 5,
+            "Trait Number": 8,
+            "Trait Name": "Passionate",
+            "Scenario": "Positive Energy and Enthusiasm"
+        }
+    ],
+    "27": [
+        {
+            "Decision Statement": "I only consider feedback from those with more experience, as others may not be aware of my knowledge.",
+            "Decision Statement Value": 1,
+            "Trait Number": 9,
+            "Trait Name": "Resilient",
+            "Scenario": "Handling Feedback"
+        },
+        {
+            "Decision Statement": "While I can accept feedback to some degree from people I respect, I might prioritize those with more experience.",
+            "Decision Statement Value": 2,
+            "Trait Number": 9,
+            "Trait Name": "Resilient",
+            "Scenario": "Handling Feedback"
+        },
+        {
+            "Decision Statement": "I've learned to be selective, including valuable feedback after evaluating its relevance.",
+            "Decision Statement Value": 3,
+            "Trait Number": 9,
+            "Trait Name": "Resilient",
+            "Scenario": "Handling Feedback"
+        },
+        {
+            "Decision Statement": "I actively extract value from both positive and negative feedback, especially from those with relevant experience or knowledge.",
+            "Decision Statement Value": 4,
+            "Trait Number": 9,
+            "Trait Name": "Resilient",
+            "Scenario": "Handling Feedback"
+        },
+        {
+            "Decision Statement": "\u201cI extract value from critical feedback even from those with no industry experience\u201d.",
+            "Decision Statement Value": 5,
+            "Trait Number": 9,
+            "Trait Name": "Resilient",
+            "Scenario": "Handling Feedback"
+        }
+    ],
+    "28": [
+        {
+            "Decision Statement": "I prefer not to spend time educating potential customers.If they grasp it, they buy; if not, we move on.",
+            "Decision Statement Value": 1,
+            "Trait Number": 10,
+            "Trait Name": "Educational",
+            "Scenario": "Educating potential customers"
+        },
+        {
+            "Decision Statement": "I advocate dedicating time to educate customers about the complete benefits of our product or service.",
+            "Decision Statement Value": 2,
+            "Trait Number": 10,
+            "Trait Name": "Educational",
+            "Scenario": "Educating potential customers"
+        },
+        {
+            "Decision Statement": "I recognize the need for some education for potential customers before we acquire them.",
+            "Decision Statement Value": 3,
+            "Trait Number": 10,
+            "Trait Name": "Educational",
+            "Scenario": "Educating potential customers"
+        },
+        {
+            "Decision Statement": "Every product or service requires education to ensure customers understand its value.",
+            "Decision Statement Value": 4,
+            "Trait Number": 10,
+            "Trait Name": "Educational",
+            "Scenario": "Educating potential customers"
+        },
+        {
+            "Decision Statement": "Education needs to be involved at every step of the customer acquisition process.",
+            "Decision Statement Value": 5,
+            "Trait Number": 10,
+            "Trait Name": "Educational",
+            "Scenario": "Educating potential customers"
+        }
+    ],
+    "29": [
+        {
+            "Decision Statement": "I often use intuition and personal experience, rarely using data in decision-making.",
+            "Decision Statement Value": 1,
+            "Trait Number": 11,
+            "Trait Name": "Analytical",
+            "Scenario": "Data-Driven Decision-Making"
+        },
+        {
+            "Decision Statement": "I value data but often prioritize personal judgment and experience over analytical insights in decision-making.",
+            "Decision Statement Value": 2,
+            "Trait Number": 11,
+            "Trait Name": "Analytical",
+            "Scenario": "Data-Driven Decision-Making"
+        },
+        {
+            "Decision Statement": "I blend intuition and data, acknowledging the value of information without relying solely on it for decisions.",
+            "Decision Statement Value": 3,
+            "Trait Number": 11,
+            "Trait Name": "Analytical",
+            "Scenario": "Data-Driven Decision-Making"
+        },
+        {
+            "Decision Statement": "I like using data in my decision-making but complement it with personal experiences.",
+            "Decision Statement Value": 4,
+            "Trait Number": 11,
+            "Trait Name": "Analytical",
+            "Scenario": "Data-Driven Decision-Making"
+        },
+        {
+            "Decision Statement": "To make reliable decisions, I use data to avoid personal bias",
+            "Decision Statement Value": 5,
+            "Trait Number": 11,
+            "Trait Name": "Analytical",
+            "Scenario": "Data-Driven Decision-Making"
+        }
+    ],
+    "30": [
+        {
+            "Decision Statement": "I prioritize premium office spaces to project brand value, exceeding basic business needs.",
+            "Decision Statement Value": 1,
+            "Trait Number": 12,
+            "Trait Name": "Frugal",
+            "Scenario": "Practical Office Choices"
+        },
+        {
+            "Decision Statement": "I invest in creative, productive office spaces that foster community, valuing cost-effectiveness.",
+            "Decision Statement Value": 2,
+            "Trait Number": 12,
+            "Trait Name": "Frugal",
+            "Scenario": "Practical Office Choices"
+        },
+        {
+            "Decision Statement": "I prioritize office spaces and furnishings that balance functionality and aesthetics without unnecessary extravagance.",
+            "Decision Statement Value": 3,
+            "Trait Number": 12,
+            "Trait Name": "Frugal",
+            "Scenario": "Practical Office Choices"
+        },
+        {
+            "Decision Statement": "I prioritize cost-effective office solutions, emphasizing functionality aligned with the business's financial health.",
+            "Decision Statement Value": 4,
+            "Trait Number": 12,
+            "Trait Name": "Frugal",
+            "Scenario": "Practical Office Choices"
+        },
+        {
+            "Decision Statement": "I prioritize practical budget-friendly office choices and am open to remote work as needed.",
+            "Decision Statement Value": 5,
+            "Trait Number": 12,
+            "Trait Name": "Frugal",
+            "Scenario": "Practical Office Choices"
+        }
+    ],
+    "31": [
+        {
+            "Decision Statement": "I doubt education effectively addresses industry issues; I prioritize factors other than educational initiatives.",
+            "Decision Statement Value": 1,
+            "Trait Number": 10,
+            "Trait Name": "Educational",
+            "Scenario": "The Belief of Education as part of the solution"
+        },
+        {
+            "Decision Statement": "Although education isn't the main remedy for industry issues, certain solutions benefit from its inclusion.",
+            "Decision Statement Value": 2,
+            "Trait Number": 10,
+            "Trait Name": "Educational",
+            "Scenario": "The Belief of Education as part of the solution"
+        },
+        {
+            "Decision Statement": "I believe in the importance of education in solving industry problems and actively support educational initiatives.",
+            "Decision Statement Value": 3,
+            "Trait Number": 10,
+            "Trait Name": "Educational",
+            "Scenario": "The Belief of Education as part of the solution"
+        },
+        {
+            "Decision Statement": "Education is vital for addressing lifestyle and cultural challenges. I advocate holistic problem-solving through educational initiatives.",
+            "Decision Statement Value": 4,
+            "Trait Number": 10,
+            "Trait Name": "Educational",
+            "Scenario": "The Belief of Education as part of the solution"
+        },
+        {
+            "Decision Statement": "I prioritize education to address real-world challenges, advocating for widespread learning to drive solutions and spark innovation.",
+            "Decision Statement Value": 5,
+            "Trait Number": 10,
+            "Trait Name": "Educational",
+            "Scenario": "The Belief of Education as part of the solution"
+        }
+    ],
+    "32": [
+        {
+            "Decision Statement": "I usually prioritize daily operations over long-term goals, making decisions without formal strategic planning.",
+            "Decision Statement Value": 1,
+            "Trait Number": 11,
+            "Trait Name": "Analytical",
+            "Scenario": "Strategic Planning"
+        },
+        {
+            "Decision Statement": "I consider certain aspects of strategic planning, but I lack a structured approach to long-term planning in my activities.",
+            "Decision Statement Value": 2,
+            "Trait Number": 11,
+            "Trait Name": "Analytical",
+            "Scenario": "Strategic Planning"
+        },
+        {
+            "Decision Statement": "I employ a strategic planning approach, balancing short and long-term goals, though its consistent application may vary across project aspects.",
+            "Decision Statement Value": 3,
+            "Trait Number": 11,
+            "Trait Name": "Analytical",
+            "Scenario": "Strategic Planning"
+        },
+        {
+            "Decision Statement": "I emphasize strategic planning, regularly setting and adjusting long-term goals in my projects.",
+            "Decision Statement Value": 4,
+            "Trait Number": 11,
+            "Trait Name": "Analytical",
+            "Scenario": "Strategic Planning"
+        },
+        {
+            "Decision Statement": "I am a dedicated strategic planner skilled in developing and executing plans for short-term goals and long-term visions through detailed data analysis.",
+            "Decision Statement Value": 5,
+            "Trait Number": 11,
+            "Trait Name": "Analytical",
+            "Scenario": "Strategic Planning"
+        }
+    ],
+    "33": [
+        {
+            "Decision Statement": "In marketing, spending money consistently is key to making money throughout the year.",
+            "Decision Statement Value": 1,
+            "Trait Number": 12,
+            "Trait Name": "Frugal",
+            "Scenario": "Strategic Marketing Spending"
+        },
+        {
+            "Decision Statement": "I allocate a standard marketing budget annually but boost it for new product or service promotions.",
+            "Decision Statement Value": 2,
+            "Trait Number": 12,
+            "Trait Name": "Frugal",
+            "Scenario": "Strategic Marketing Spending"
+        },
+        {
+            "Decision Statement": "I spend considerable money on marketing only when launching a new product or service.",
+            "Decision Statement Value": 3,
+            "Trait Number": 12,
+            "Trait Name": "Frugal",
+            "Scenario": "Strategic Marketing Spending"
+        },
+        {
+            "Decision Statement": "I operate a small budget for marketing and spend it wisely throughout the year.",
+            "Decision Statement Value": 4,
+            "Trait Number": 12,
+            "Trait Name": "Frugal",
+            "Scenario": "Strategic Marketing Spending"
+        },
+        {
+            "Decision Statement": "I focus on organic marketing, limiting my marketing spend to almost nothing.",
+            "Decision Statement Value": 5,
+            "Trait Number": 12,
+            "Trait Name": "Frugal",
+            "Scenario": "Strategic Marketing Spending"
+        }
+    ],
+    "34": [
+        {
+            "Decision Statement": "Social media simplifies widespread education delivery; little need is there for other means.",
+            "Decision Statement Value": 1,
+            "Trait Number": 10,
+            "Trait Name": "Educational",
+            "Scenario": "Delivery of Education"
+        },
+        {
+            "Decision Statement": "While using social media, I view every interaction with a potential client as a chance for education, even though it's not my primary focus.",
+            "Decision Statement Value": 2,
+            "Trait Number": 10,
+            "Trait Name": "Educational",
+            "Scenario": "Delivery of Education"
+        },
+        {
+            "Decision Statement": "I actively educate potential customers in one-to-one conversations whenever possible.",
+            "Decision Statement Value": 3,
+            "Trait Number": 10,
+            "Trait Name": "Educational",
+            "Scenario": "Delivery of Education"
+        },
+        {
+            "Decision Statement": "Every speaking opportunity is a chance to educate the audience, and continuous education is vital through social media platforms.",
+            "Decision Statement Value": 4,
+            "Trait Number": 10,
+            "Trait Name": "Educational",
+            "Scenario": "Delivery of Education"
+        },
+        {
+            "Decision Statement": "I actively educate through various channels: website, app, social media, online and offline workshops, etc.",
+            "Decision Statement Value": 5,
+            "Trait Number": 10,
+            "Trait Name": "Educational",
+            "Scenario": "Delivery of Education"
+        }
+    ],
+    "35": [
+        {
+            "Decision Statement": "I fix issues as they come, with minimal consideration for proactive or preventive measures.",
+            "Decision Statement Value": 1,
+            "Trait Number": 11,
+            "Trait Name": "Analytical",
+            "Scenario": "Preventive Problem Solving"
+        },
+        {
+            "Decision Statement": "I tend to address future issues reactively, prioritizing immediate solutions over long-term prevention.",
+            "Decision Statement Value": 2,
+            "Trait Number": 11,
+            "Trait Name": "Analytical",
+            "Scenario": "Preventive Problem Solving"
+        },
+        {
+            "Decision Statement": "I tackle present and future issues, evaluate potential problems, and implement risk-reduction measures, but the approach is inconsistent.",
+            "Decision Statement Value": 3,
+            "Trait Number": 11,
+            "Trait Name": "Analytical",
+            "Scenario": "Preventive Problem Solving"
+        },
+        {
+            "Decision Statement": "I prioritize proactive problem-solving, identifying potential challenges and implementing solutions to minimize risks.",
+            "Decision Statement Value": 4,
+            "Trait Number": 11,
+            "Trait Name": "Analytical",
+            "Scenario": "Preventive Problem Solving"
+        },
+        {
+            "Decision Statement": "Focusing on immediate issues has a little point when I know more issues down the chain are yet to be solved.",
+            "Decision Statement Value": 5,
+            "Trait Number": 11,
+            "Trait Name": "Analytical",
+            "Scenario": "Preventive Problem Solving"
+        }
+    ],
+    "36": [
+        {
+            "Decision Statement": "I'm leaving a stable career, anticipating my entrepreneurial income to sustain my current lifestyle and contribute to savings.",
+            "Decision Statement Value": 1,
+            "Trait Number": 12,
+            "Trait Name": "Frugal",
+            "Scenario": "Financially Responsible Compensation"
+        },
+        {
+            "Decision Statement": "Entrepreneurship requires sacrifices, but the salary should cover the cost of my current lifestyle.",
+            "Decision Statement Value": 2,
+            "Trait Number": 12,
+            "Trait Name": "Frugal",
+            "Scenario": "Financially Responsible Compensation"
+        },
+        {
+            "Decision Statement": "I anticipate my entrepreneurial income to cover my current housing costs and about 75% of my monthly expenses.",
+            "Decision Statement Value": 3,
+            "Trait Number": 12,
+            "Trait Name": "Frugal",
+            "Scenario": "Financially Responsible Compensation"
+        },
+        {
+            "Decision Statement": "I expect my entrepreneurial salary to provide a basic income to sustain the business.",
+            "Decision Statement Value": 4,
+            "Trait Number": 12,
+            "Trait Name": "Frugal",
+            "Scenario": "Financially Responsible Compensation"
+        },
+        {
+            "Decision Statement": "I choose not to take a salary initially in a venture, directing compensation towards a team contributing to revenue building.",
+            "Decision Statement Value": 5,
+            "Trait Number": 12,
+            "Trait Name": "Frugal",
+            "Scenario": "Financially Responsible Compensation"
+        }
+    ],
+    "37": [
+        {
+            "Decision Statement": "I prioritize emphasizing revenue and business survival over ethical considerations when launching a new business.",
+            "Decision Statement Value": 1,
+            "Trait Number": 13,
+            "Trait Name": "Legacy",
+            "Scenario": "Ethical Business Practices"
+        },
+        {
+            "Decision Statement": "I recognize ethical considerations, but they'll be applied as situations arise, not the primary focus.",
+            "Decision Statement Value": 2,
+            "Trait Number": 13,
+            "Trait Name": "Legacy",
+            "Scenario": "Ethical Business Practices"
+        },
+        {
+            "Decision Statement": "I actively implement ethical business practices but aim to consistently prioritize and integrate them across all aspects of my activities.",
+            "Decision Statement Value": 3,
+            "Trait Number": 13,
+            "Trait Name": "Legacy",
+            "Scenario": "Ethical Business Practices"
+        },
+        {
+            "Decision Statement": "I prioritize ethical practices as fundamental to our core values, guiding nearly all business activities.",
+            "Decision Statement Value": 4,
+            "Trait Number": 13,
+            "Trait Name": "Legacy",
+            "Scenario": "Ethical Business Practices"
+        },
+        {
+            "Decision Statement": "I prioritize ethical practices with consistent oversight to ensure strict adherence, leaving no room for unethical business practices.",
+            "Decision Statement Value": 5,
+            "Trait Number": 13,
+            "Trait Name": "Legacy",
+            "Scenario": "Ethical Business Practices"
+        }
+    ],
+    "38": [
+        {
+            "Decision Statement": "My branding efforts are primarily offline with minimal online presence.",
+            "Decision Statement Value": 1,
+            "Trait Number": 14,
+            "Trait Name": "Digital",
+            "Scenario": "Online Presence and Branding"
+        },
+        {
+            "Decision Statement": "While I have a basic online presence, my branding efforts are limited, and digital channels may be underutilized.",
+            "Decision Statement Value": 2,
+            "Trait Number": 14,
+            "Trait Name": "Digital",
+            "Scenario": "Online Presence and Branding"
+        },
+        {
+            "Decision Statement": "I aim to enhance digital channels for effective branding while maintaining a strong online presence.",
+            "Decision Statement Value": 3,
+            "Trait Number": 14,
+            "Trait Name": "Digital",
+            "Scenario": "Online Presence and Branding"
+        },
+        {
+            "Decision Statement": "I leverage digital platforms to boost online presence and establish a robust connection with my audience.",
+            "Decision Statement Value": 4,
+            "Trait Number": 14,
+            "Trait Name": "Digital",
+            "Scenario": "Online Presence and Branding"
+        },
+        {
+            "Decision Statement": "I turn practically every conversation into an opportunity to post a story online.",
+            "Decision Statement Value": 5,
+            "Trait Number": 14,
+            "Trait Name": "Digital",
+            "Scenario": "Online Presence and Branding"
+        }
+    ],
+    "39": [
+        {
+            "Decision Statement": "I avoid decision-making in a crisis and struggle with rapid problem-solving.",
+            "Decision Statement Value": 1,
+            "Trait Number": 15,
+            "Trait Name": "Problem Solver",
+            "Scenario": "Rapid Decision-Making in Crisis"
+        },
+        {
+            "Decision Statement": "I may struggle with quick decision-making and problem-solving during crises.",
+            "Decision Statement Value": 2,
+            "Trait Number": 15,
+            "Trait Name": "Problem Solver",
+            "Scenario": "Rapid Decision-Making in Crisis"
+        },
+        {
+            "Decision Statement": "I make reasonable decisions in a crisis and contribute to rapid problem-solving to some extent.",
+            "Decision Statement Value": 3,
+            "Trait Number": 15,
+            "Trait Name": "Problem Solver",
+            "Scenario": "Rapid Decision-Making in Crisis"
+        },
+        {
+            "Decision Statement": "I'm comfortable making decisions in a crisis and actively contributing to effective problem-solving.",
+            "Decision Statement Value": 4,
+            "Trait Number": 15,
+            "Trait Name": "Problem Solver",
+            "Scenario": "Rapid Decision-Making in Crisis"
+        },
+        {
+            "Decision Statement": "I excel in crises, make rapid decisions, and actively seek problem-solving opportunities in entrepreneurship.",
+            "Decision Statement Value": 5,
+            "Trait Number": 15,
+            "Trait Name": "Problem Solver",
+            "Scenario": "Rapid Decision-Making in Crisis"
+        }
+    ],
+    "40": [
+        {
+            "Decision Statement": "I focus on raising and leveraging funds for progress and revenue, addressing sustainable revenue concerns later.",
+            "Decision Statement Value": 1,
+            "Trait Number": 13,
+            "Trait Name": "Legacy",
+            "Scenario": "Sustainable Business model"
+        },
+        {
+            "Decision Statement": "I see initial focus on sustainable models impractical due to substantial funding needs for technology or infrastructure.",
+            "Decision Statement Value": 2,
+            "Trait Number": 13,
+            "Trait Name": "Legacy",
+            "Scenario": "Sustainable Business model"
+        },
+        {
+            "Decision Statement": "While emphasizing sustainable business models, I simultaneously generate revenue or secure investment funds.",
+            "Decision Statement Value": 3,
+            "Trait Number": 13,
+            "Trait Name": "Legacy",
+            "Scenario": "Sustainable Business model"
+        },
+        {
+            "Decision Statement": "I prioritize revenue-generating services to avoid significant early investments, while also exploring sustainable business models.",
+            "Decision Statement Value": 4,
+            "Trait Number": 13,
+            "Trait Name": "Legacy",
+            "Scenario": "Sustainable Business model"
+        },
+        {
+            "Decision Statement": "I aim for early sustainable business models to generate sufficient revenue for survival, relying on investor funds only to thrive.",
+            "Decision Statement Value": 5,
+            "Trait Number": 13,
+            "Trait Name": "Legacy",
+            "Scenario": "Sustainable Business model"
+        }
+    ],
+    "41": [
+        {
+            "Decision Statement": "I'm not fully convinced every solution needs a digital approach; technology isn't my priority.",
+            "Decision Statement Value": 1,
+            "Trait Number": 14,
+            "Trait Name": "Digital",
+            "Scenario": "Introducing Technology to Customers"
+        },
+        {
+            "Decision Statement": "I present advanced digital solutions to customers, validating my product with minimal digital tool usage.",
+            "Decision Statement Value": 2,
+            "Trait Number": 14,
+            "Trait Name": "Digital",
+            "Scenario": "Introducing Technology to Customers"
+        },
+        {
+            "Decision Statement": "I use an iterative approach, creating digital solutions with continuous feedback and customer engagement for enhanced efficiency.",
+            "Decision Statement Value": 3,
+            "Trait Number": 14,
+            "Trait Name": "Digital",
+            "Scenario": "Introducing Technology to Customers"
+        },
+        {
+            "Decision Statement": "I aim to swiftly implement digital solutions to reduce manual interactions and improve efficiency.",
+            "Decision Statement Value": 4,
+            "Trait Number": 14,
+            "Trait Name": "Digital",
+            "Scenario": "Introducing Technology to Customers"
+        },
+        {
+            "Decision Statement": "I aim to eliminate manual interactions from the start, launching only if the product or service is entirely digital.",
+            "Decision Statement Value": 5,
+            "Trait Number": 14,
+            "Trait Name": "Digital",
+            "Scenario": "Introducing Technology to Customers"
+        }
+    ],
+    "42": [
+        {
+            "Decision Statement": "I fix only the obvious problems.",
+            "Decision Statement Value": 1,
+            "Trait Number": 15,
+            "Trait Name": "Problem Solver",
+            "Scenario": "Identifying Root Causes"
+        },
+        {
+            "Decision Statement": "I immediately address obvious problems, but I'm aware of complex problems that require investigation.",
+            "Decision Statement Value": 2,
+            "Trait Number": 15,
+            "Trait Name": "Problem Solver",
+            "Scenario": "Identifying Root Causes"
+        },
+        {
+            "Decision Statement": "I solve both obvious and complex problems, prioritizing the complex ones when time permits.",
+            "Decision Statement Value": 3,
+            "Trait Number": 15,
+            "Trait Name": "Problem Solver",
+            "Scenario": "Identifying Root Causes"
+        },
+        {
+            "Decision Statement": "I dedicate most of my time to investigating challenging problems rather than quick fixes.",
+            "Decision Statement Value": 4,
+            "Trait Number": 15,
+            "Trait Name": "Problem Solver",
+            "Scenario": "Identifying Root Causes"
+        },
+        {
+            "Decision Statement": "I excel at identifying root causes, consistently delivering effective solutions to complex challenges.",
+            "Decision Statement Value": 5,
+            "Trait Number": 15,
+            "Trait Name": "Problem Solver",
+            "Scenario": "Identifying Root Causes"
+        }
+    ],
+    "43": [
+        {
+            "Decision Statement": "I prioritize swiftly launching our product/service for early traction, increasing chances of exponential growth with early investment.",
+            "Decision Statement Value": 1,
+            "Trait Number": 13,
+            "Trait Name": "Legacy",
+            "Scenario": "Long term vision"
+        },
+        {
+            "Decision Statement": "I prioritize speed while validating our value proposition against competitors to ensure we're on the right track.",
+            "Decision Statement Value": 2,
+            "Trait Number": 13,
+            "Trait Name": "Legacy",
+            "Scenario": "Long term vision"
+        },
+        {
+            "Decision Statement": "I prioritize creating a framework for all products and services but focus on swiftly launching a smaller solution to make progress.",
+            "Decision Statement Value": 3,
+            "Trait Number": 13,
+            "Trait Name": "Legacy",
+            "Scenario": "Long term vision"
+        },
+        {
+            "Decision Statement": "I prioritize mindfully establishing the right business foundation, emphasizing early traction for customers and investors.",
+            "Decision Statement Value": 4,
+            "Trait Number": 13,
+            "Trait Name": "Legacy",
+            "Scenario": "Long term vision"
+        },
+        {
+            "Decision Statement": "I prioritize establishing the right business foundation for future growth, ensuring sustainable progress regardless of the timeframe.",
+            "Decision Statement Value": 5,
+            "Trait Number": 13,
+            "Trait Name": "Legacy",
+            "Scenario": "Long term vision"
+        }
+    ],
+    "44": [
+        {
+            "Decision Statement": "I prioritize identifying the right use case over following current digital trends in the industry.",
+            "Decision Statement Value": 1,
+            "Trait Number": 14,
+            "Trait Name": "Digital",
+            "Scenario": "Adaptation to Digital Trends"
+        },
+        {
+            "Decision Statement": "I incorporate new digital trends into my solutions based on expert endorsement.",
+            "Decision Statement Value": 2,
+            "Trait Number": 14,
+            "Trait Name": "Digital",
+            "Scenario": "Adaptation to Digital Trends"
+        },
+        {
+            "Decision Statement": "I keep an eye on digital trends, balancing focus on impactful solutions that meet customer needs.",
+            "Decision Statement Value": 3,
+            "Trait Number": 14,
+            "Trait Name": "Digital",
+            "Scenario": "Adaptation to Digital Trends"
+        },
+        {
+            "Decision Statement": "I test and incorporate new digital tools to enhance the effectiveness of my solutions for customers.",
+            "Decision Statement Value": 4,
+            "Trait Number": 14,
+            "Trait Name": "Digital",
+            "Scenario": "Adaptation to Digital Trends"
+        },
+        {
+            "Decision Statement": "I actively promote and integrate digital trends into solutions, urging customers to explore them.",
+            "Decision Statement Value": 5,
+            "Trait Number": 14,
+            "Trait Name": "Digital",
+            "Scenario": "Adaptation to Digital Trends"
+        }
+    ],
+    "45": [
+        {
+            "Decision Statement": "I have avoided dealing with urgent issues when the timing was not right for me.",
+            "Decision Statement Value": 1,
+            "Trait Number": 15,
+            "Trait Name": "Problem Solver",
+            "Scenario": "Prioritizing Urgent Issues"
+        },
+        {
+            "Decision Statement": "I seek support for urgent issues when necessary but may not proactively find solutions.",
+            "Decision Statement Value": 2,
+            "Trait Number": 15,
+            "Trait Name": "Problem Solver",
+            "Scenario": "Prioritizing Urgent Issues"
+        },
+        {
+            "Decision Statement": "I usually prioritize and seek solutions for urgent issues, with occasional delays.",
+            "Decision Statement Value": 3,
+            "Trait Number": 15,
+            "Trait Name": "Problem Solver",
+            "Scenario": "Prioritizing Urgent Issues"
+        },
+        {
+            "Decision Statement": "I consistently prioritize and address urgent issues, actively seeking effective solutions.",
+            "Decision Statement Value": 4,
+            "Trait Number": 15,
+            "Trait Name": "Problem Solver",
+            "Scenario": "Prioritizing Urgent Issues"
+        },
+        {
+            "Decision Statement": "I thrive in handling urgent issues, proactively seeking solutions, and ensuring prompt resolution.",
+            "Decision Statement Value": 5,
+            "Trait Number": 15,
+            "Trait Name": "Problem Solver",
+            "Scenario": "Prioritizing Urgent Issues"
+        }
+    ]
+}
