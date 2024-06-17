@@ -52,49 +52,46 @@
     </style>
 </head>
 <body>
-<div id="app" class="container">
-    <form id="assessmentForm" @submit.prevent="submitForm">
+<div class="container">
+    <form id="assessmentForm" action="https://script.google.com/macros/s/AKfycbwwmQq7ADva5d_q6y19MEK8IeGsSn8yz1oHEOF7irV1Jv40zkk3Y-qT-LHV4dZ-3PWV/exec" method="POST">
         <!-- Page 1 -->
-        <div class="form-page" :class="{ active: currentPage === 1 }">
+        <div class="form-page active" id="page-1">
             <div class="form-header">
                 <h2>Let us know you better</h2>
             </div>
             <div class="form-body">
                 <div class="form-group">
                     <label for="firstName">First Name *</label>
-                    <input type="text" class="form-control" id="firstName" v-model="formData.firstName" required>
+                    <input type="text" class="form-control" id="firstName" name="firstName" required>
                 </div>
                 <div class="form-group">
                     <label for="lastName">Last Name *</label>
-                    <input type="text" class="form-control" id="lastName" v-model="formData.lastName" required>
+                    <input type="text" class="form-control" id="lastName" name="lastName" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email *</label>
-                    <input type="email" class="form-control" id="email" v-model="formData.email" required>
+                    <input type="email" class="form-control" id="email" name="email" required>
                 </div>
                 <div class="form-group">
                     <label for="phoneNumber">Phone Number *</label>
-                    <input type="tel" class="form-control" id="phoneNumber" v-model="formData.phoneNumber" required>
+                    <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" required>
                 </div>
                 <div class="form-group">
                     <label for="dob">When were you born? *</label>
                     <div class="form-row">
                         <div class="col">
-                            <select class="form-control" id="dobDay" v-model="formData.dobDay" required>
+                            <select class="form-control" id="dobDay" name="dobDay" required>
                                 <option value="">Day</option>
-                                <option v-for="day in days" :key="day" :value="day">{{ day }}</option>
                             </select>
                         </div>
                         <div class="col">
-                            <select class="form-control" id="dobMonth" v-model="formData.dobMonth" required>
+                            <select class="form-control" id="dobMonth" name="dobMonth" required>
                                 <option value="">Month</option>
-                                <option v-for="(month, index) in months" :key="index" :value="index + 1">{{ month }}</option>
                             </select>
                         </div>
                         <div class="col">
-                            <select class="form-control" id="dobYear" v-model="formData.dobYear" required>
+                            <select class="form-control" id="dobYear" name="dobYear" required>
                                 <option value="">Year</option>
-                                <option v-for="year in years" :key="year" :value="year">{{ year }}</option>
                             </select>
                         </div>
                     </div>
@@ -102,149 +99,147 @@
                 <div class="form-group">
                     <label>Gender *</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" id="male" v-model="formData.gender" value="male" required>
+                        <input class="form-check-input" type="radio" id="male" name="gender" value="male" required>
                         <label class="form-check-label" for="male">Male</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" id="female" v-model="formData.gender" value="female" required>
+                        <input class="form-check-input" type="radio" id="female" name="gender" value="female" required>
                         <label class="form-check-label" for="female">Female</label>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="location">Where are you based? *</label>
-                    <input type="text" class="form-control" id="location" v-model="formData.location" required>
+                    <input type="text" class="form-control" id="location" name="location" required>
                 </div>
                 <div class="form-footer">
-                    <button type="button" class="btn btn-primary" @click="nextPage(2)">Next</button>
+                    <button type="button" class="btn btn-primary" onclick="showPage(2)">Next</button>
                 </div>
             </div>
         </div>
 
         <!-- Page 2 -->
-        <div class="form-page" :class="{ active: currentPage === 2 }">
+        <div class="form-page" id="page-2">
             <div class="form-header">
                 <h2>Give us a little history</h2>
             </div>
             <div class="form-body">
                 <div class="form-group">
                     <label>Education Level *</label>
-                    <div class="form-check" v-for="(level, index) in educationLevels" :key="index">
-                        <input class="form-check-input" type="radio" :id="level" v-model="formData.educationLevel" :value="level" required>
-                        <label class="form-check-label" :for="level">{{ level }}</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="highSchool" name="educationLevel" value="High School" required>
+                        <label class="form-check-label" for="highSchool">High School</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="bachelors" name="educationLevel" value="Bachelors" required>
+                        <label class="form-check-label" for="bachelors">Bachelors</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="masters" name="educationLevel" value="Masters" required>
+                        <label class="form-check-label" for="masters">Masters</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="phd" name="educationLevel" value="PhD" required>
+                        <label class="form-check-label" for="phd">PhD</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="otherEducation" name="educationLevel" value="Other" required>
+                        <label class="form-check-label" for="otherEducation">Other</label>
                     </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group"> 
                     <label>Current Employment Status *</label>
-                    <div id="employmentStatusContainer" class="form-check">
-                        <div class="form-check" v-for="(status, index) in employmentStatuses" :key="index">
-                            <input class="form-check-input" type="radio" :id="status" v-model="formData.employmentStatus" :value="status" required>
-                            <label class="form-check-label" :for="status">{{ status }}</label>
-                        </div>
-                    </div>
+                    <div id="employmentStatusContainer" class="form-check"></div>
                 </div>
                 <div class="form-group">
                     <label for="careerExperience">Type of Career Experience *</label>
                     <div id="careerExperienceContainer" class="form-check">
-                        <div class="form-check" v-for="(experience, index) in careerExperiences" :key="index">
-                            <input class="form-check-input" type="checkbox" :id="experience" v-model="formData.careerExperience" :value="experience">
-                            <label class="form-check-label" :for="experience">{{ experience }}</label>
-                        </div>
-                        <!-- Add an input field for adding a custom option -->
-                        <div class="form-group mt-2">
-                            <label for="addOption">Add Option</label>
-                            <input type="text" class="form-control" id="addOption" placeholder="Type here to add an option" v-model="customCareerOption">
-                            <button type="button" class="btn btn-secondary mt-2" @click="addCustomOption">Add</button>
-                        </div>
+                        <!-- Checkboxes will be generated here -->
+                    </div>
+                    <!-- Add an input field for adding a custom option -->
+                    <div class="form-group mt-2">
+                        <label for="addOption">Add Option</label>
+                        <input type="text" class="form-control" id="addOption" placeholder="Type here to add an option">
+                        <button type="button" class="btn btn-secondary mt-2" onclick="addCustomOption()">Add</button>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="linkedinUrl">LinkedIn URL</label>
-                    <input type="text" class="form-control" id="linkedinUrl" v-model="formData.linkedinUrl">
+                    <input type="text" class="form-control" id="linkedinUrl" name="linkedinUrl">
                 </div>
                 <div class="form-group">
                     <label for="entrepreneurialExperience">Entrepreneurial Experience (Number of Years) *</label>
-                    <input type="number" class="form-control" id="entrepreneurialExperience" v-model="formData.entrepreneurialExperience" required>
+                    <input type="number" class="form-control" id="entrepreneurialExperience" name="entrepreneurialExperience" required>
                 </div>
                 <div class="form-group">
                     <label for="previousStartups">Number of Previous Startups *</label>
-                    <input type="number" class="form-control" id="previousStartups" v-model="formData.previousStartups" required>
+                    <input type="number" class="form-control" id="previousStartups" name="previousStartups" required>
                 </div>
                 <div class="form-group">
                     <label for="currentStartups">Number of Current Startups/Projects *</label>
-                    <input type="number" class="form-control" id="currentStartups" v-model="formData.currentStartups" required>
+                    <input type="number" class="form-control" id="currentStartups" name="currentStartups" required>
                 </div>
                 <div class="form-group">
                     <label for="entrepreneurialExperienceType">Type of Entrepreneurial Experience *</label>
                     <div id="entrepreneurialExperienceContainer" class="form-check">
-                        <div class="form-check" v-for="(experience, index) in entrepreneurialExperiences" :key="index">
-                            <input class="form-check-input" type="checkbox" :id="experience" v-model="formData.entrepreneurialExperienceType" :value="experience">
-                            <label class="form-check-label" :for="experience">{{ experience }}</label>
-                        </div>
+                        <!-- Checkboxes will be generated here -->
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="startupRoles">Previously held startup roles *</label>
                     <div id="startupRolesContainer" class="form-check">
-                        <div class="form-check" v-for="(role, index) in startupRoles" :key="index">
-                            <input class="form-check-input" type="checkbox" :id="role" v-model="formData.startupRoles" :value="role">
-                            <label class="form-check-label" :for="role">{{ role }}</label>
-                        </div>
+                        <!-- Checkboxes will be generated here -->
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="skills">Skills *</label>
-                    <input type="text" class="form-control" id="skills" v-model="formData.skills" required>
-                </div>
-                <div class="form-group">
-                    <label for="interests">Interests *</label>
-                    <input type="text" class="form-control" id="interests" v-model="formData.interests" required>
-                </div>
                 <div class="form-footer">
-                    <button type="button" class="btn btn-secondary" @click="previousPage(1)">Previous</button>
-                    <button type="button" class="btn btn-primary" @click="nextPage(3)">Next</button>
+                    <button type="button" class="btn btn-secondary" onclick="showPage(1)">Back</button>
+                    <button type="button" class="btn btn-primary" onclick="showPage(3)">Next</button>
                 </div>
             </div>
         </div>
 
         <!-- Page 3 -->
-        <div class="form-page" :class="{ active: currentPage === 3 }">
+        <div class="form-page" id="page-3">
             <div class="form-header">
-                <h2>Final information</h2>
+                <h2>Tell us about your Startup</h2>
             </div>
             <div class="form-body">
                 <div class="form-group">
-                    <label for="motivation">What motivates you? *</label>
-                    <textarea class="form-control" id="motivation" v-model="formData.motivation" rows="4" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="expectations">What are your expectations from this program? *</label>
-                    <textarea class="form-control" id="expectations" v-model="formData.expectations" rows="4" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="additionalInfo">Any additional information you would like to share?</label>
-                    <textarea class="form-control" id="additionalInfo" v-model="formData.additionalInfo" rows="4"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="howDidYouHear">How did you hear about this program? *</label>
-                    <input type="text" class="form-control" id="howDidYouHear" v-model="formData.howDidYouHear" required>
-                </div>
-                <div class="form-group">
-                    <label>Rate your interest in this program *</label>
+                    <label>Current Startup Stage *</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" id="interestHigh" v-model="formData.interestLevel" value="Highly Interested" required>
-                        <label class="form-check-label" for="interestHigh">Highly Interested</label>
+                        <input class="form-check-input" type="radio" id="preIdea" name="startupStage" value="Pre-idea" required>
+                        <label class="form-check-label" for="preIdea">Pre-idea: "I don't have an idea"</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" id="interestMedium" v-model="formData.interestLevel" value="Moderately Interested" required>
-                        <label class="form-check-label" for="interestMedium">Moderately Interested</label>
+                        <input class="form-check-input" type="radio" id="preLaunch" name="startupStage" value="Pre-Launch" required>
+                        <label class="form-check-label" for="preLaunch">Pre-Launch: "I am building my product/service"</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" id="interestLow" v-model="formData.interestLevel" value="Slightly Interested" required>
-                        <label class="form-check-label" for="interestLow">Slightly Interested</label>
+                        <input class="form-check-input" type="radio" id="postLaunch" name="startupStage" value="Post-Launch" required>
+                        <label class="form-check-label" for="postLaunch">Post-Launch: "I am perfecting my product/service"</label>
                     </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="growth" name="startupStage" value="Growth" required>
+                        <label class="form-check-label" for="growth">Growth: "I am scaling my product/service"</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="startupProjectName">Startup Project Name *</label>
+                    <input type="text" class="form-control" id="startupProjectName" name="startupProjectName" required>
+                </div>
+                <div class="form-group">
+                    <label for="firstChallenge">First Challenge *</label>
+                    <select class="form-control" id="firstChallenge" name="firstChallenge" required></select>
+                </div>
+                <div class="form-group">
+                    <label for="secondChallenge">Second Challenge *</label>
+                    <select class="form-control" id="secondChallenge" name="secondChallenge" required></select>
+                </div>
+                <div class="form-group">
+                    <label for="thirdChallenge">Third Challenge *</label>
+                    <select class="form-control" id="thirdChallenge" name="thirdChallenge" required></select>
                 </div>
                 <div class="form-footer">
-                    <button type="button" class="btn btn-secondary" @click="previousPage(2)">Previous</button>
+                    <button type="button" class="btn btn-secondary" onclick="showPage(2)">Back</button>
                     <button type="submit" class="btn btn-success">Submit</button>
                 </div>
             </div>
@@ -252,114 +247,193 @@
     </form>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
-    new Vue({
-        el: '#app',
-        data: {
-            currentPage: 1,
-            formData: {
-                firstName: '',
-                lastName: '',
-                email: '',
-                phoneNumber: '',
-                dobDay: '',
-                dobMonth: '',
-                dobYear: '',
-                gender: '',
-                location: '',
-                educationLevel: '',
-                employmentStatus: '',
-                careerExperience: [],
-                linkedinUrl: '',
-                entrepreneurialExperience: '',
-                previousStartups: '',
-                currentStartups: '',
-                entrepreneurialExperienceType: [],
-                startupRoles: [],
-                skills: '',
-                interests: '',
-                motivation: '',
-                expectations: '',
-                additionalInfo: '',
-                howDidYouHear: '',
-                interestLevel: ''
-            },
-            customCareerOption: '',
-            days: Array.from({ length: 31 }, (_, i) => i + 1),
-            months: [
-                'January', 'February', 'March', 'April',
-                'May', 'June', 'July', 'August',
-                'September', 'October', 'November', 'December'
-            ],
-            years: Array.from({ length: 100 }, (_, i) => new Date().getFullYear() - i),
-            educationLevels: ['High School', 'Bachelor\'s Degree', 'Master\'s Degree', 'PhD'],
-            employmentStatuses: ['Employed', 'Unemployed', 'Student'],
-            careerExperiences: ['Corporate', 'Startup', 'Entrepreneurship'],
-            entrepreneurialExperiences: ['Product Development', 'Marketing', 'Sales', 'Finance', 'Operations', 'Technology', 'Other'],
-            startupRoles: ['Founder', 'Co-Founder', 'Early Employee', 'Investor'],
-        },
-        methods: {
-            nextPage(page) {
-                this.currentPage = page;
-                window.scrollTo(0, 0);
-            },
-            previousPage(page) {
-                this.currentPage = page;
-                window.scrollTo(0, 0);
-            },
-            addCustomOption() {
-                if (this.customCareerOption && !this.formData.careerExperience.includes(this.customCareerOption)) {
-                    this.formData.careerExperience.push(this.customCareerOption);
-                    this.customCareerOption = '';
-                }
-            },
-            submitForm() {
-                // Handle form submission logic here
-                console.log('Form submitted with data:', this.formData);
-                // Example: You can make an AJAX request to submit this form data to a server
-                // axios.post('/api/submitForm', this.formData)
-                //     .then(response => {
-                //         console.log('Response:', response.data);
-                //         // Optionally reset form data after successful submission
-                //         // this.resetFormData();
-                //     })
-                //     .catch(error => {
-                //         console.error('Error:', error);
-                //     });
-            },
-            resetFormData() {
-                // Reset form data after successful submission if needed
-                this.formData = {
-                    firstName: '',
-                    lastName: '',
-                    email: '',
-                    phoneNumber: '',
-                    dobDay: '',
-                    dobMonth: '',
-                    dobYear: '',
-                    gender: '',
-                    location: '',
-                    educationLevel: '',
-                    employmentStatus: '',
-                    careerExperience: [],
-                    linkedinUrl: '',
-                    entrepreneurialExperience: '',
-                    previousStartups: '',
-                    currentStartups: '',
-                    entrepreneurialExperienceType: [],
-                    startupRoles: [],
-                    skills: '',
-                    interests: '',
-                    motivation: '',
-                    expectations: '',
-                    additionalInfo: '',
-                    howDidYouHear: '',
-                    interestLevel: ''
-                };
-            }
-        }
+
+    const employmentStatus = [
+        "Full-time", "Part-time", "Contracting", "Freelancing", 
+        "Self Employed", "Student", "Unemployed", "Other"
+    ];
+    const careerExperiences = [
+        "None", "Education", "Deep Technology", "Mental Health", "Finance", 
+        "Capital Markets", "Lifestyle", "Sustainability", "Agriculture", 
+        "Pharmaceutical", "Hospitality", "Retail", "Property", "Digital Assets", 
+        "Healthcare", "Engineering", "Legal", "Social", "Space", "Wellness", 
+        "Luxury", "Art", "Robotics", "Human Resources", "Gaming", "Media", 
+        "Ecommerce", "Marketing", "Graphic Design", "Machine Learning", 
+        "Telecommunications", "Military", "Science/Research", "Project Management", 
+        "SAAS"
+    ];
+    const entrepreneurialExperiences = [
+        "None", "Education", "Deep Technology", "Mental Health", "Finance", 
+        "Capital Markets", "Lifestyle", "Sustainability", "Agriculture", 
+        "Pharmaceutical", "Hospitality", "Retail", "Property", "Digital Assets", 
+        "Healthcare", "Engineering", "Legal", "Social", "Space", "Wellness", 
+        "Luxury", "Art", "Robotics", "Human Resources", "Gaming", "Media", 
+        "Ecommerce", "Marketing", "Graphic Design", "Machine Learning", 
+        "Telecommunications", "Military", "Science/Research", "Project Management", 
+        "SAAS"
+    ];
+    const startupRoles = [
+        "NONE", "CEO", "CTO", "CPO", "CFO", "CMO", "CSO", 
+        "Advisor", "Executive Director", "Managing Director", "Other"
+    ];
+
+    const challengesData = {
+        "Pre-idea": [
+            "Identifying Viable Opportunities",
+            "Information Overload",
+            "Uncertainty and Ambiguity",
+            "Time Management"
+        ],
+        "Pre-Launch": [
+            "Building a Prototype",
+            "Market Research",
+            "Fundraising",
+            "Team Building"
+        ],
+        "Post-Launch": [
+            "Scaling Operations",
+            "Customer Acquisition",
+            "Product Optimization",
+            "Market Penetration"
+        ],
+        "Growth": [
+            "International Expansion",
+            "Strategic Partnerships",
+            "Diversification",
+            "Sustainability"
+        ]
+    };
+
+    document.addEventListener('DOMContentLoaded', function() {
+        populateOptions('employmentStatusContainer', employmentStatus);
+        populateOptions('careerExperienceContainer', careerExperiences);
+        populateOptions('entrepreneurialExperienceContainer', entrepreneurialExperiences);
+        populateOptions('startupRolesContainer', startupRoles);
+        populateDateOptions();
     });
+
+    function populateOptions(containerId, options) {
+        const container = document.getElementById(containerId);
+        options.forEach(option => {
+            const id = `${containerId}${option.replace(/\s+/g, '')}`;
+            const checkbox = `
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="${id}" name="${containerId}" value="${option}">
+                    <label class="form-check-label" for="${id}">${option}</label>
+                </div>`;
+            container.insertAdjacentHTML('beforeend', checkbox);
+        });
+    }
+
+    function addCustomOption() {
+        const customOption = document.getElementById('addOption').value;
+        if (customOption.trim() !== '') {
+            careerExperiences.push(customOption);
+            const id = `careerExperienceContainer${customOption.replace(/\s+/g, '')}`;
+            const checkbox = `
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="${id}" name="careerExperience" value="${customOption}">
+                    <label class="form-check-label" for="${id}">${customOption}</label>
+                </div>`;
+            document.getElementById('careerExperienceContainer').insertAdjacentHTML('beforeend', checkbox);
+            document.getElementById('addOption').value = ''; // Clear input field
+        }
+    }
+
+    function showPage(pageNumber) {
+        const pages = document.querySelectorAll('.form-page');
+        pages.forEach(page => {
+            page.classList.remove('active');
+        });
+        document.getElementById(`page-${pageNumber}`).classList.add('active');
+    }
+
+document.getElementById('assessmentForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const formData = new FormData(this); // Get form data
+
+    fetch('https://script.google.com/macros/s/AKfycbwwmQq7ADva5d_q6y19MEK8IeGsSn8yz1oHEOF7irV1Jv40zkk3Y-qT-LHV4dZ-3PWV/exec', {
+        method: 'POST',
+        body: formData  // Send formData directly, no need for JSON.stringify
+    }).then(response => {
+        if (response.ok) {
+            alert('Form submitted successfully!');
+        } else {
+            throw new Error('Failed to submit form');
+        }
+    }).catch(error => {
+        console.error('Error:', error);
+        alert('Error submitting form');
+    });
+});
+
+
+
+
+    function populateDateOptions() {
+        const daySelect = document.getElementById('dobDay');
+        const monthSelect = document.getElementById('dobMonth');
+        const yearSelect = document.getElementById('dobYear');
+
+        for (let i = 1; i <= 31; i++) {
+            const option = document.createElement('option');
+            option.value = i;
+            option.textContent = i;
+            daySelect.appendChild(option);
+        }
+
+        const months = [
+            'January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'
+        ];
+
+        months.forEach((month, index) => {
+            const option = document.createElement('option');
+            option.value = index + 1;
+            option.textContent = month;
+            monthSelect.appendChild(option);
+        });
+
+        const currentYear = new Date().getFullYear();
+        for (let i = currentYear; i >= 1900; i--) {
+            const option = document.createElement('option');
+            option.value = i;
+            option.textContent = i;
+            yearSelect.appendChild(option);
+        }
+    }
+
+    document.querySelectorAll('input[name="startupStage"]').forEach(input => {
+        input.addEventListener('change', function() {
+            loadChallenges(this.value);
+        });
+    });
+
+    function loadChallenges(stage) {
+        const firstChallengeSelect = document.getElementById('firstChallenge');
+        const secondChallengeSelect = document.getElementById('secondChallenge');
+        const thirdChallengeSelect = document.getElementById('thirdChallenge');
+        
+        firstChallengeSelect.innerHTML = ''; // Clear existing options
+        secondChallengeSelect.innerHTML = ''; // Clear existing options
+        thirdChallengeSelect.innerHTML = ''; // Clear existing options
+
+        if (challengesData[stage]) {
+            challengesData[stage].forEach(challenge => {
+                const option = document.createElement('option');
+                option.value = challenge;
+                option.textContent = challenge;
+                firstChallengeSelect.appendChild(option);
+                secondChallengeSelect.appendChild(option.cloneNode(true));
+                thirdChallengeSelect.appendChild(option.cloneNode(true));
+            });
+        }
+    }
 </script>
 </body>
 </html>
