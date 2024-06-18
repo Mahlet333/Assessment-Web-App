@@ -53,7 +53,7 @@
 </head>
 <body>
 <div class="container">
-    <form id="assessmentForm">
+    <form id="assessmentForm" action="https://script.google.com/macros/s/AKfycbwwmQq7ADva5d_q6y19MEK8IeGsSn8yz1oHEOF7irV1Jv40zkk3Y-qT-LHV4dZ-3PWV/exec" method="POST">
         <!-- Page 1 -->
         <div class="form-page active" id="page-1">
             <div class="form-header">
@@ -352,11 +352,25 @@
         document.getElementById(`page-${pageNumber}`).classList.add('active');
     }
 
-    document.getElementById('assessmentForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        alert('Form submitted!');
-        // Add your form submission logic here
+document.getElementById('assessmentForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const formData = new FormData(this); // Get form data
+
+    fetch('https://script.google.com/macros/s/AKfycbwwmQq7ADva5d_q6y19MEK8IeGsSn8yz1oHEOF7irV1Jv40zkk3Y-qT-LHV4dZ-3PWV/exec', {
+        method: 'POST',
+        body: formData  // Send formData directly, no need for JSON.stringify
+    }).then(response => {
+        if (response.ok) {
+            alert('Form submitted successfully!');
+        } else {
+            throw new Error('Failed to submit form');
+        }
+    }).catch(error => {
+        console.error('Error:', error);
+        alert('Error submitting form');
     });
+});
 
     function populateDateOptions() {
         const daySelect = document.getElementById('dobDay');
