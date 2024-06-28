@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="static/style.css"> 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
     <div class="dashboard-container">
@@ -36,6 +37,16 @@
                 <div class="dash-content">
                     <iframe src="/dash1/" style="width: 100%; height: 800px; border: none;"></iframe>
                 </div>
+                <div class="donut-charts-container" style="display: flex; flex-wrap: wrap;">
+        <div id="CEO" class="donut-chart" style="width: 150px; height: 150px;"></div>
+        <div id="CSO" class="donut-chart" style="width: 150px; height: 150px;"></div>
+        <div id="CPO" class="donut-chart" style="width: 150px; height: 150px;"></div>
+        <div id="CMO" class="donut-chart" style="width: 150px; height: 150px;"></div>
+        <div id="CFO" class="donut-chart" style="width: 150px; height: 150px;"></div>
+        <div id="CTO" class="donut-chart" style="width: 150px; height: 150px;"></div>
+        <div id="COO" class="donut-chart" style="width: 150px; height: 150px;"></div>
+        <div id="Advisor" class="donut-chart" style="width: 150px; height: 150px;"></div>
+    </div>
             </div>
         </div>
     </div>
@@ -48,5 +59,59 @@
             window.location.href = "/logout";
         }
     </script>
+    <script>
+    function createDonutChart(id, percentage) {
+        var colors = ['#1f77b4', '#ff7f0e']; // Colors array for low and high percentages
+        
+        if (percentage > 50) {
+            colors = ['#1f77b4', '#ff7f0e']; // Blue for lower percentage, orange for higher
+        } else {
+            colors = ['#1f77b4', '#d62728']; // Blue for lower percentage, red for higher
+        }
+        
+        var data = [{
+            values: [percentage, 100 - percentage],
+            labels: ['Percentage', ''],
+            type: 'pie',
+            hole: .4,
+            textinfo: "none",
+            marker: {
+                colors: colors
+            }
+        }];
+        
+        var layout = {
+            title: id,
+            showlegend: false,
+            annotations: [{
+                font: {
+                    size: 20
+                },
+                showarrow: false,
+                text: `${percentage}%`,
+                x: 0.5,
+                y: 0.5
+            }],
+            margin: { t: 30, b: 0, l: 0, r: 0 }
+        };
+        
+        Plotly.newPlot(id, data, layout);
+    }
+
+    var percentages = {
+        CEO: 52,
+        CSO: 52,
+        CPO: 51,
+        CMO: 52,
+        CFO: 59,
+        CTO: 53,
+        COO: 54,
+        Advisor: 52
+    };
+
+    for (const [role, percentage] of Object.entries(percentages)) {
+        createDonutChart(role, percentage);
+    }
+</script>
 </body>
 </html>
