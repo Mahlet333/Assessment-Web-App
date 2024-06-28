@@ -127,7 +127,12 @@ body {
     background-color: var(--accent-color);
     transform: translateY(-2px);
 }
-
+css
+Copy code
+.logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintains the aspect ratio */
+}
 /* Quiz Page Styles */
 body.quiz-page {
     background: radial-gradient(circle, var(--primary-color) 0%, var(--white-color) 100%);
