@@ -321,5 +321,18 @@ def results():
         return redirect(url_for('login'))
     return render_template('results.html')
 
+@server.route('/user_profile')
+def profile():
+    if 'loggedin' not in session:
+        return redirect(url_for('login'))
+    return render_template('user_profile.html')
+
+# Route to render subscriptions.html
+@server.route('/subscription')
+def subscription():
+    if 'loggedin' not in session:
+        return redirect(url_for('login'))  # Redirect to login if not logged in
+    return render_template('subscription.html')  # Render subscriptions.html
+
 if __name__ == '__main__':
     server.run(debug=True)
