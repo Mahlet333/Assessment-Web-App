@@ -9,6 +9,9 @@ import pandas as pd
 from sshtunnel import SSHTunnelForwarder
 import psycopg2
 import pandas as pd
+import os
+import plotly.graph_objects as go  # Import plotly.graph_objects
+import plotly.io as pio  # Import plotly.io
 
 def get_db_connection():
     server = SSHTunnelForwarder(
