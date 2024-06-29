@@ -45,9 +45,14 @@ INNER JOIN public.user_info ui ON crd.user_id = ui.user_id
 INNER JOIN public.benchmark b ON crd.benchmark_id = b.benchmark_id
 ORDER BY crd.comparison_id ASC;
 """
+query3 = """
+SELECT * FROM public.user_info
+ORDER BY user_id ASC; 
+"""
 
 consequence_df = pd.read_sql(query1, conn)
 comparison_df = pd.read_sql(query2, conn)
+df = pd.read_sql(query3, conn)
 conn.close()
 server.stop()
 
@@ -258,6 +263,66 @@ def update_benchmark_graph(selected_benchmark, selected_user):
     
     return fig
 
+dash_app3 = Dash(__name__, server=server, url_base_pathname='/dash3/')
+dash_app3.layout = html.Div(style={'backgroundColor': '#f7f7f7', 'fontFamily': 'Poppins, sans-serif'}, children=[
+    dcc.Dropdown(
+        id='user-dropdown',
+        options=[{'label': name, 'value': user_id} for user_id, name in zip(df['user_id'], df['name'])],
+        placeholder="Select a User",
+        style={'marginBottom': '10px'}
+    ),
+    dcc.Dropdown(
+        id='type-dropdown',
+        options=[
+            {'label': 'Business Partner', 'value': 'business_partner'},
+            {'label': 'Mentor', 'value': 'mentor'}
+        ],
+        placeholder="Select Type",
+        style={'marginBottom': '10px'}
+    ),
+    dcc.Dropdown(
+        id='industry-dropdown',
+        placeholder="Select Industry Experience",
+        style={'marginBottom': '20px'}
+    ),
+    html.Div(id='results', style={'color': '#111', 'padding': '20px', 'border': '1px solid #ccc', 'borderRadius': '5px', 'boxShadow': '0 1px 3px rgba(0, 0, 0, 0.1)', 'backgroundColor': '#fff'}),
+])
+
+# Callback to update the industry dropdown based on the unique values in the DataFrame
+@dash_app3.callback(
+    Output('industry-dropdown', 'options'),
+    Input('type-dropdown', 'value')
+)
+def set_industry_options(selected_type):
+    if selected_type:
+        unique_industries = df['industry_experience'].dropna().unique()
+        return [{'label': industry, 'value': industry} for industry in unique_industries]
+    return []
+
+# Callback to update the results based on selected user, type, and industry experience
+@dash_app3.callback(
+    Output('results', 'children'),
+    [Input('user-dropdown', 'value'),
+     Input('type-dropdown', 'value'),
+     Input('industry-dropdown', 'value')]
+)
+def update_results(selected_user, selected_type, selected_industry):
+    if not selected_user or not selected_type or not selected_industry:
+        return "Please make all selections."
+
+    filtered_df = df[df['industry_experience'] == selected_industry]
+    
+    if selected_type == 'business_partner':
+        top_5 = filtered_df[filtered_df['user_id'] != selected_user].head(5)
+    elif selected_type == 'mentor':
+        top_5 = filtered_df[filtered_df['user_id'] != selected_user].sort_values(by='entrepreneurial_experience', ascending=False).head(5)
+    
+    return html.Ul([
+        html.Li([
+            f"{row['name']} - {row['industry_experience']} - {row['entrepreneurial_experience']} years of experience"
+        ]) for idx, row in top_5.iterrows()
+    ])
+
 @server.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -315,11 +380,11 @@ def submit_quiz():
 
     return jsonify({"message": "Quiz submitted successfully!"})
 
-@server.route('/results')
-def results():
+@server.route('/matching')
+def matching():
     if 'loggedin' not in session:
         return redirect(url_for('login'))
-    return render_template('results.html')
+    return render_template('matching.html')
 
 @server.route('/user_profile')
 def profile():

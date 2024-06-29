@@ -42,7 +42,7 @@
                 <a href="/benchmark"><i class="fas fa-home"></i>Benchmark Comparison</a>
                 <a href="/oboarding"><i class="fas fa-file-alt"></i>Onboarding</a>
                 <a href="/quiz"><i class="fas fa-chart-line"></i>Increase confidence</a>
-                <a href="#"><i class="fas fa-book"></i>Matching</a>
+                <a href="/matching"><i class="fas fa-book"></i>Matching</a>
                 <a href="/user_profile"><i class="fas fa-user-friends"></i>User Profile</a>
                 <a href="/subscription"><i class="fas fa-file-pdf"></i>Subscription</a>
             </div>
@@ -51,16 +51,19 @@
                     <iframe src="/dash1/" style="width: 100%; height: 800px; border: none;"></iframe>
                 </div>
                 <div class="donut-charts-container">
-                    <div id="CEO" class="donut-chart"></div>
-                    <div id="CSO" class="donut-chart"></div>
-                    <div id="CPO" class="donut-chart"></div>
-                    <div id="CMO" class="donut-chart"></div>
-                    <div id="CFO" class="donut-chart"></div>
-                    <div id="CTO" class="donut-chart"></div>
-                    <div id="COO" class="donut-chart"></div>
-                    <div id="Advisor" class="donut-chart"></div>
+                    <div>
+                        <div id="CEO" class="donut-chart"></div>
+                        <div id="CSO" class="donut-chart"></div>
+                        <div id="CPO" class="donut-chart"></div>
+                        <div id="CMO" class="donut-chart"></div>
+                    </div>
+                    <div>
+                        <div id="CFO" class="donut-chart"></div>
+                        <div id="CTO" class="donut-chart"></div>
+                        <div id="COO" class="donut-chart"></div>
+                        <div id="Advisor" class="donut-chart"></div>
+                    </div>
                 </div>
-    </div>
             </div>
         </div>
     </div>
@@ -74,19 +77,21 @@
         }
     </script>
     <script>
-<script>
         function logout() {
             window.location.href = "/logout";
         }
     </script>
     <script>
         function createDonutChart(id, percentage) {
-            var colors = ['#1f77b4', '#ff7f0e']; // Colors array for low and high percentages
+            var primaryColor = '#11113A';    // Dark Blue
+            var secondaryColor = '#E8AFF6';  // Light Purple
+            var tertiaryColor = '#AFB0F6';   // Purple
+            var colors = [secondaryColor, primaryColor]; // Colors array for low and high percentages
             
             if (percentage > 50) {
-                colors = ['#1f77b4', '#ff7f0e']; // Blue for lower percentage, orange for higher
+                colors = [secondaryColor, primaryColor]; // Blue for lower percentage, orange for higher
             } else {
-                colors = ['#1f77b4', '#d62728']; // Blue for lower percentage, red for higher
+                colors = [secondaryColor, tertiaryColor]; // Blue for lower percentage, red for higher
             }
             
             var data = [{
