@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="static/style.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .columns {
+            float: left;
+            width: 33.3%;
+            padding: 8px;
+        }
+        .price {
+            list-style-type: none;
+            border: 1px solid #eee;
+            margin: 0;
+            padding: 0;
+            transition: 0.3s;
+        }
+        .price:hover {
+            box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+        }
+        .price .header {
+            background-color: ##11113A;
+            color: white;
+            font-size: 25px;
+            padding: 10px;
+            text-align: center;
+        }
+        .price li {
+            border-bottom: 1px solid #eee;
+            padding: 20px;
+            text-align: center;
+        }
+        .price .grey {
+            background-color: #eee;
+            font-size: 20px;
+        }
+        .button {
+            background-color: #E8AFF6;
+            border: none;
+            color: white;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+        }
+        @media only screen and (max-width: 600px) {
+            .columns {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="header">
+            <h1>
+                <img src="static/assests/logo.png" alt="Logo" class="logo" style="width: 150px; height: 25px;">
+            </h1>
+            <div class="user-info">
+                <!-- <img src="static/assests/user.jpg" alt="User Avatar">
+                <span>John Doe</span> -->
+                <button class="logout-btn" onclick="logout()">Logout</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sidebar">
+                <a href="/dashboard"><i class="fas fa-home"></i>Overview</a>
+                <a href="/benchmark"><i class="fas fa-home"></i>Benchmark Comparison</a>
+                <a href="/oboarding"><i class="fas fa-file-alt"></i>Onboarding</a>
+                <a href="/quiz"><i class="fas fa-chart-line"></i>Increase confidence</a>
+                <a href="#"><i class="fas fa-book"></i>Matching</a>
+                <a href="/user_profile"><i class="fas fa-user-friends"></i>User Profile</a>
+                <a href="/subscription"><i class="fas fa-file-pdf"></i>Subscription</a>
+            </div>
+            <div class="main-content">
+                <!-- Responsive Pricing Tables -->
+                <h2 style="text-align:center">Mentorship Plans</h2>
+                <p style="text-align:center">Choose the Right Mentorship Plan for Your Growth Journey!!</p>
+                
+                <div class="columns">
+                    <ul class="price">
+                        <li class="header">Basic</li>
+                        <li class="grey">AED 1000 / year</li>
+                        <li>Basic mentor matching</li>
+                        <li>Access to community mentors</li>
+                        <li>Monthly check-ins</li>
+                        <li>10 Credit Scores</li>
+                        <li class="grey"><a href="#" class="button">Sign Up</a></li>
+                    </ul>
+                </div>
+                
+                <div class="columns">
+                    <ul class="price">
+                        <li class="header" style="background-color:#E8AFF6">Pro</li>
+                        <li class="grey">AED 3000 / year</li>
+                        <li>Advanced mentor matching</li>
+                        <li>Access to expert mentors</li>
+                        <li>Bi-weekly check-ins</li>
+                        <li>40 Credit Scores</li>
+                        <li class="grey"><a href="#" class="button">Sign Up</a></li>
+                    </ul>
+                </div>
+                
+                <div class="columns">
+                    <ul class="price">
+                        <li class="header">Premium</li>
+                        <li class="grey">20000 AED / year</li>
+                        <li>Customized mentor matching</li>
+                        <li>Access to top industry mentors</li>
+                        <li>Weekly check-ins</li>
+                        <li>Unlimited Credit Score</li>
+                        <li class="grey"><a href="#" class="button">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function logout() {
+            window.location.href = "/logout";
+        }
+    </script>
+</body>
+</html>

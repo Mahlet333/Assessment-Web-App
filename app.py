@@ -9,6 +9,9 @@ import pandas as pd
 from sshtunnel import SSHTunnelForwarder
 import psycopg2
 import pandas as pd
+import os
+import plotly.graph_objects as go  # Import plotly.graph_objects
+import plotly.io as pio  # Import plotly.io
 
 def get_db_connection():
     server = SSHTunnelForwarder(
@@ -317,6 +320,19 @@ def results():
     if 'loggedin' not in session:
         return redirect(url_for('login'))
     return render_template('results.html')
+
+@server.route('/user_profile')
+def profile():
+    if 'loggedin' not in session:
+        return redirect(url_for('login'))
+    return render_template('user_profile.html')
+
+# Route to render subscriptions.html
+@server.route('/subscription')
+def subscription():
+    if 'loggedin' not in session:
+        return redirect(url_for('login'))  # Redirect to login if not logged in
+    return render_template('subscription.html')  # Render subscriptions.html
 
 if __name__ == '__main__':
     server.run(debug=True)
